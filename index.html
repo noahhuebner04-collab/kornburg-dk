@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dart Knights – Competition</title>
+<meta name="description" content="Dart Knights Competition Auswertung – statische Website-Shell">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Optional: Google-Font mit System-Fallback (kein Pflicht-CDN) -->
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=16">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="logo" aria-label="Dart Knights Logo">
+      <span class="logo-mark" aria-hidden="true">♞</span>
+      <span class="logo-text">DART <em>KNIGHTS</em></span>
+    </div>
+    <nav class="tabs" aria-label="Hauptbereich">
+      <button class="tab is-active" type="button">Competition</button>
+    </nav>
+    <button id="adminBtn" class="btn btn-ghost" type="button" title="Admin-Modus (?admin=1)">Admin</button>
+  </div>
+</header>
+
+<nav id="subnav" class="subnav" aria-label="Report-Seiten">
+  <div class="subnav-inner">
+    <button type="button" data-page="startseite" class="is-active">Start</button>
+    <button type="button" data-page="setzliste">Setzliste</button>
+    <button type="button" data-page="trophaeen">Trophäen</button>
+    <button type="button" data-page="h2h">H2H</button>
+    <button type="button" data-page="vergleich">Vergleich</button>
+    <button type="button" data-page="spieler1">Spieler</button>
+    <button type="button" data-page="gruppen">Gruppen</button>
+    <button type="button" data-page="bingo">Bingo</button>
+  </div>
+</nav>
+
+<div id="adminBar" class="adminbar" hidden>
+  <span class="adminbar-title">ADMIN</span>
+  <button id="btnEdit" type="button" class="btn btn-small">Bearbeiten: aus</button>
+  <button id="btnExport" type="button" class="btn btn-small btn-ghost">Export</button>
+  <button id="btnImport" type="button" class="btn btn-small btn-ghost">Import</button>
+  <input id="fileImport" type="file" accept="application/json" hidden>
+  <button id="btnPin" type="button" class="btn btn-small btn-ghost">PIN ändern</button>
+  <button id="btnData" type="button" class="btn btn-small btn-ghost">Daten</button>
+  <button id="btnReset" type="button" class="btn btn-small btn-ghost">Zurücksetzen</button>
+  <span class="adminbar-hint">Datenneuberechnung läuft über <code>tools/build_data.py</code> (separat).</span>
+</div>
+<div id="dataPanel" class="datapanel" hidden>
+  <p><b>Datenstand:</b> <span id="dataStand">–</span> <span id="srvStand" class="muted"></span></p>
+  <div class="imp-row">
+    <button id="btnRefresh" type="button" class="btn btn-small">Daten aktualisieren (aus Excel neu bauen)</button>
+    <span id="refreshStatus" class="muted"></span>
+  </div>
+  <pre id="refreshLog" class="refresh-log" hidden></pre>
+  <div class="imp">
+    <p><b>Wochen-Import</b> (wie altes Programm, aber Werte statt Formeln):</p>
+    <label for="impUrls">Turnier-URLs (eine pro Zeile):</label>
+    <textarea id="impUrls" rows="3" placeholder="https://www.darthelfer.de/public/tournament/…"></textarea>
+    <div class="imp-row">
+      <span>Ziel-Excel:</span>
+      <button id="impPick" type="button" class="btn btn-small btn-ghost">Excel wählen …</button>
+      <input id="impFile" type="file" accept=".xlsx" hidden>
+      <span id="impFileName" class="muted">–</span>
+    </div>
+    <div id="impStep" hidden>
+      <p><b id="impStepTitle">Daten für Turnier:</b></p>
+      <div class="imp-row">
+        <label>Woche <input id="impWeek" type="text" size="12"></label>
+        <label>Datum <input id="impDate" type="text" size="12" placeholder="TT.MM.JJJJ"></label>
+        <label><input id="impGelost" type="checkbox"> gelost?</label>
+      </div>
+      <label for="impRank">Ranking-Tabelle hier einfügen:</label>
+      <textarea id="impRank" rows="6"></textarea>
+      <button id="impNext" type="button" class="btn btn-small">Übernehmen &amp; Weiter</button>
+    </div>
+    <div class="imp-row">
+      <button id="impStart" type="button" class="btn btn-small">Alle Wochen nacheinander verarbeiten</button>
+    </div>
+    <label for="impLog">Verarbeitungs-Log:</label>
+    <textarea id="impLog" rows="8" readonly></textarea>
+  </div>
+  <p><b>Danach Seite neu bauen</b> (Terminal, im Ordner <code>Dart Knights Website</code>):</p>
+  <p><code>python tools/build_data.py --out site/data</code> (muss <code>ALLE CHECKS OK</code> melden), dann Seite neu laden. Zum Testen erst auf der <code>- TEST.xlsx</code>-Kopie laufen lassen.</p>
+  <p class="muted">Details: <code>tools/dart_import.py --help</code> (CLI-Alternative mit <code>--dry-run</code>, <code>--selftest</code>, <code>--rebuild</code>). Original-Programm bleibt unverändert.</p>
+</div>
+
+<main id="view" class="view" aria-live="polite"></main>
+
+<div id="loader" class="loader" role="status">
+  <div class="spinner" aria-hidden="true"></div>
+  <p>Lade Daten …</p>
+</div>
+
+<div id="refreshOverlay" class="loader" role="status" hidden>
+  <div class="spinner" aria-hidden="true"></div>
+  <p id="refreshOverlayText"><b>Daten werden aktualisiert …</b></p>
+  <p id="refreshOverlaySub" class="refresh-sub">Excel wird eingelesen, Kennzahlen neu berechnet, Seite neu gebaut. Bitte warten.</p>
+</div>
+
+<script src="js/vendor/xlsx.full.min.js"></script>
+<script src="js/charts.js?v=6"></script>
+<script src="js/compute.js?v=8"></script>
+<script src="js/app.js?v=15"></script>
+<script src="js/import.js?v=4"></script>
+<script src="js/admin.js?v=10"></script>
+</body>
+</html>
