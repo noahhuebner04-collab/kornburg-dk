@@ -1,0 +1,15 @@
+{
+ "default": "2026",
+ "order": [
+  "2026",
+  "2025",
+  "2024",
+  "alltime"
+ ],
+ "labels": {
+  "2026": "Saison 2026",
+  "2025": "Saison 2025",
+  "2024": "Saison 2024",
+  "alltime": "All Time"
+ }
+}

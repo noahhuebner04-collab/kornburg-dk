@@ -209,7 +209,18 @@
     var wp = winprob(a, b);
     function wins(rs) { return rs.filter(function (m) { return m.lg === 3; }).length; }
     var bilanz = { a: wins(R_AB), b: wins(R_BA), duelle: R_AB.length, legsA: A.lg, legsB: Bs.lg };
-    return { zeilen: zeilen, trend: (function (o) { o[a] = ta; o[b] = tb; return o; })({}), winProb: { a: wp[0], b: wp[1] }, bilanz: bilanz };
+    // Report-Layout: pro Kennzahl Saison-Wert vs. Direktduell-Wert je Spieler.
+    var tabelle = [
+      { label: 'Average', sa: R(div(sa.pts, sa.darts) * 3), ha: zeilen[0].a, hb: zeilen[0].b, sb: R(div(sb.pts, sb.darts) * 3) },
+      { label: 'First 9', sa: R(div(sa.f9p, sa.f9d) * 3), ha: zeilen[1].a, hb: zeilen[1].b, sb: R(div(sb.f9p, sb.f9d) * 3) },
+      { label: 'Tons', sa: sa.tons, ha: zeilen[2].a, hb: zeilen[2].b, sb: sb.tons },
+      { label: '171s', sa: sa.f171, ha: zeilen[3].a, hb: zeilen[3].b, sb: sb.f171 },
+      { label: '180s', sa: sa.f180, ha: zeilen[4].a, hb: zeilen[4].b, sb: sb.f180 },
+      { label: 'High Finish', sa: sa.hfmax || 0, ha: zeilen[5].a, hb: zeilen[5].b, sb: sb.hfmax || 0 }
+    ];
+    return { zeilen: zeilen, tabelle: tabelle,
+      trend: (function (o) { o[a] = ta; o[b] = tb; return o; })({}),
+      winProb: { a: wp[0], b: wp[1] }, bilanz: bilanz };
   }
 
   var KAT_VALUE = {

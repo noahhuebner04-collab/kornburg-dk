@@ -45,11 +45,11 @@
   function ensurePin(cb) {
     if (qs('admin') !== '1') return;
     if (sGet(KEY_ADMIN) === '1') return cb(true);
-    var ov = loadOv();
     var pin;
-    try { pin = window.prompt('Admin-PIN eingeben (Default: ' + (ov.pin || DEFAULT_PIN) + '):', ''); }
+    try { pin = window.prompt('Admin-PIN eingeben:', ''); }
     catch (e) { note('Prompt blockiert'); return cb(false); }
     if (pin == null || pin === '') { note('Abgebrochen'); return cb(false); }
+    var ov = loadOv();
     if (pin === (ov.pin || DEFAULT_PIN)) {
       sSet(KEY_ADMIN, '1');
       return cb(true);
@@ -114,14 +114,23 @@
 
   /* Daten-Refresh über den lokalen Server (tools/dk_server.py).
      Ohne Server (z. B. python -m http.server) gibt es keine API – dann Hinweis. */
+  function currentSeason() {
+    try {
+      var q = new URLSearchParams(location.search).get('saison');
+      if (q) return q;
+      return localStorage.getItem('dk_season') || '2026';
+    } catch (e) { return '2026'; }
+  }
   function refreshServerStand() {
     var el = document.getElementById('srvStand');
     if (!el) return;
+    var season = currentSeason();
     fetch('api/status', { cache: 'no-store' })
       .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
       .then(function (j) {
-        var i = (j && j.info) || {};
-        el.textContent = 'Server: Excel ' + (i.excel_mtime || '?') + ' → Daten ' + (i.data_mtime || '?');
+        var i = ((j && j.seasons && j.seasons[season] && j.seasons[season].info) || (j && j.info) || {});
+        var lbl = (j && j.seasons && j.seasons[season] && j.seasons[season].label) || season;
+        el.textContent = lbl + ': Excel ' + (i.excel_mtime || '?') + ' → Daten ' + (i.data_mtime || '?');
       })
       .catch(function () {
         el.textContent = 'Server-API fehlt (für 1-Klick-Refresh: python tools/dk_server.py starten).';
@@ -147,7 +156,8 @@
     say('Baue Daten aus Excel neu …');
     showLog('');
     overlay(true, 'Daten werden aktualisiert …');
-    fetch('api/refresh', { method: 'POST', cache: 'no-store' })
+    fetch('api/refresh', { method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ season: currentSeason() }), cache: 'no-store' })
       .then(function (r) { return r.json().then(function (j) { return { status: r.status, body: j }; }); })
       .catch(function () { return { status: 0, body: null }; })
       .then(function (res) {
@@ -172,6 +182,56 @@
         } else {
           overlay(false);
           say('Fehler: ' + (b.error || 'Rebuild fehlgeschlagen (Log prüfen).'));
+        }
+      });
+  }
+
+  /* Deploy per Knopfdruck: lokale Seite -> GitHub Pages (tools/deploy_pages.py).
+     Läuft über den lokalen Server; ohne Server (z. B. python -m http.server)
+     gibt es keine API – dann Hinweis auf die .bat-Datei. */
+  function deployServerStand() {
+    var el = document.getElementById('deployRemote');
+    if (!el) return;
+    fetch('api/status', { cache: 'no-store' })
+      .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+      .then(function (j) {
+        var d = (j && j.deploy) || {};
+        if (!d.git) el.textContent = 'git nicht gefunden (Git für Windows installieren).';
+        else if (!d.remote) el.textContent = 'noch kein Remote – einmalig im Terminal: python tools/deploy_pages.py --remote https://github.com/NAME/REPO.git';
+        else el.textContent = 'Ziel: ' + d.remote + (d.dirty ? ' (' + d.dirty + ' ungespeicherte Änderung(en) werden mitcommittet)' : '');
+      })
+      .catch(function () {
+        el.textContent = 'Server-API fehlt (für 1-Klick-Deploy: DartKnights starten.bat nutzen).';
+      });
+  }
+  function deployToGithub(btn) {
+    var st = document.getElementById('deployStatus');
+    var lg = document.getElementById('deployLog');
+    function say(t) { if (st) st.textContent = t; }
+    function showLog(t) {
+      if (!lg) return;
+      lg.hidden = false;
+      lg.textContent = t;
+    }
+    if (btn) btn.disabled = true;
+    say('Deploye auf GitHub … (ggf. GitHub-Login im Browser bestätigen, dauert ca. 1 Min.)');
+    showLog('');
+    fetch('api/deploy', { method: 'POST', cache: 'no-store' })
+      .then(function (r) { return r.json().then(function (j) { return { status: r.status, body: j }; }); })
+      .catch(function () { return { status: 0, body: null }; })
+      .then(function (res) {
+        if (btn) btn.disabled = false;
+        if (!res.body) {
+          say('Kein Server mit Deploy-API – Alternative: Doppelklick auf „DartKnights deployen.bat“.');
+          return;
+        }
+        var b = res.body;
+        showLog(b.log || b.error || JSON.stringify(b));
+        deployServerStand();
+        if (b.ok) {
+          say('Fertig – ' + (b.url ? ('in ca. 1 Minute live unter ' + b.url) : 'gepusht.'));
+        } else {
+          say('Fehler: ' + (b.error || 'Deploy fehlgeschlagen (Log prüfen).'));
         }
       });
   }
@@ -202,7 +262,14 @@
         }
       });
     }
-    if (qs('admin') !== '1') return;
+    if (qs('admin') !== '1') {
+      // Doppelt gesichert (falls CSS hidden überstimmt): Panels nie zeigen.
+      var bar0 = document.getElementById('adminBar');
+      if (bar0) bar0.hidden = true;
+      var dp0 = document.getElementById('dataPanel');
+      if (dp0) dp0.hidden = true;
+      return;
+    }
     ensurePin(function (ok) {
       if (!ok) return;
       document.body.classList.add('admin');
@@ -244,7 +311,7 @@
       }var bP = document.getElementById('btnPin');
       if (bP) bP.addEventListener('click', function () {
         var ov = loadOv();
-        var np = window.prompt('Neue PIN:', ov.pin || DEFAULT_PIN);
+        var np = window.prompt('Neue PIN:', '');
         if (np) { ov.pin = np; saveOv(ov); window.alert('PIN gespeichert.'); }
       });
       var bD = document.getElementById('btnData');
@@ -263,10 +330,13 @@
               ' · Wochen ' + plo + '–' + phi + ' · ' + nsp + ' Spieler · ' + ms.length + ' Matches';
           } catch (e) { /* Stand optional */ }
           refreshServerStand();
+          deployServerStand();
         }
       });
       var bR2 = document.getElementById('btnRefresh');
       if (bR2) bR2.addEventListener('click', function () { refreshFromExcel(bR2); });
+      var bDp = document.getElementById('btnDeploy');
+      if (bDp) bDp.addEventListener('click', function () { deployToGithub(bDp); });
       var bR = document.getElementById('btnReset');
       if (bR) bR.addEventListener('click', function () {
         if (window.confirm('Alle Overrides löschen?')) {

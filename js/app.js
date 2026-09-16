@@ -4,11 +4,45 @@
 
   var PAGES = ['startseite', 'setzliste', 'trophaeen', 'h2h', 'vergleich', 'spieler1', 'gruppen', 'bingo'];
   var PAGE_TITLES = {
-    startseite: 'Startseite', setzliste: 'Setzliste', trophaeen: 'Trophäen', h2h: 'Head-to-Head',
+    startseite: 'Startseite', setzliste: 'Setzliste', trophaeen: 'Trophäen', h2h: 'Head to Head Statistik',
     vergleich: 'Vergleich', spieler1: 'Spieler',
     spieler3: 'Spieler III', gruppen: 'Gruppen', bingo: 'Bingo'
   };
   var FILES = ['meta', 'base'].concat(PAGES.filter(function (p) { return p !== 'spieler3'; }));
+
+  /* ---------- Saison-Umschalter (2026 / 2025 / 2024 / All Time) ---------- */
+  var SEASONS = { order: ['2026'], labels: { '2026': 'Saison 2026' }, def: '2026' };
+  var SEASON = '2026';
+  function readSeasonParam() {
+    try { return new URLSearchParams(location.search).get('saison'); }
+    catch (e) { return null; }
+  }
+  function resolveSeason() {
+    var q = readSeasonParam(), s = null;
+    try { s = q || localStorage.getItem('dk_season'); } catch (e) { s = q; }
+    s = s || SEASONS.def || '2026';
+    if (SEASONS.order.indexOf(s) === -1) s = SEASONS.def || SEASONS.order[0] || '2026';
+    return s;
+  }
+  function buildSeasonSel() {
+    var sel = document.getElementById('seasonSel');
+    if (!sel) return;
+    sel.innerHTML = '';
+    SEASONS.order.forEach(function (id) {
+      var o = document.createElement('option');
+      o.value = id; o.textContent = SEASONS.labels[id] || id;
+      sel.appendChild(o);
+    });
+    sel.value = SEASON;
+    if (sel.dataset.bound) return;
+    sel.dataset.bound = '1';
+    sel.addEventListener('change', function () {
+      try { localStorage.setItem('dk_season', sel.value); } catch (e) { /* ignore */ }
+      var u = new URL(location.href);
+      u.searchParams.set('saison', sel.value);
+      location.href = u.toString();
+    });
+  }
 
   /* ---------- Mini-Mockdaten (2 Spieler, 3 Wochen) für sichtbare Shell ohne Build ---------- */
   var MOCK_DATA = {
@@ -17,7 +51,7 @@
       kpis: [
         { titel: 'Spieler gesamt', wert: 2, sub: 'Mock' },
         { titel: 'Legs gespielt', wert: 48, sub: 'Wochen 1–3' },
-        { titel: 'Best Average', wert: 62.4, sub: 'Max Power' }
+        { titel: 'Aktuelle Woche', wert: 3, sub: 'Saison 2026' }
       ],
       anmeldung: { titel: 'Anmeldung nächste Woche', text: 'Anmeldung bis 18:15 Uhr · Jeden Mittwoch 18:30 Uhr', cta: 'ANMELDUNG NÄCHSTE WOCHE', link: '#' }
     },
@@ -254,6 +288,10 @@
         var v = cell;
         if (typeof v === 'number') { td.textContent = v.toLocaleString('de-DE'); td.className = 'num'; }
         else td.textContent = (v == null ? '–' : v);
+        // Trend-Icons einfärben (Setzliste/Rangliste): hoch = grün, runter = rot.
+        if (v === '▲') td.classList.add('trend-up');
+        else if (v === '▼') td.classList.add('trend-down');
+        else if (v === '▬') td.classList.add('trend-flat');
         if (ci > 0 && !isNaN(Number(String(cell).replace(',', '.')))) td.classList.add('num');
         tr.appendChild(td);
       });
@@ -412,16 +450,22 @@
     paint();
     return widget(wid, box);
   }
-  function heroBlock(wid, meta) {
+  function heroBlock(wid, meta, anm) {
+    anm = anm || {};
+    // Anmeldungs-Button gehört in den Hero: echter Link falls vorhanden,
+    // sonst Fallback-Button (Mock/ohne Link).
+    var cta = (anm.link && anm.link !== '#')
+      ? '<p><a class="btn" style="display:inline-block;text-decoration:none" href="' + esc(anm.link) + '">' + esc(anm.cta || 'ANMELDUNG NÄCHSTE WOCHE') + '</a></p>'
+      : '<button class="btn" type="button" data-cta>' + esc(anm.cta || 'ANMELDUNG NÄCHSTE WOCHE') + '</button>';
     var n = el('div', 'hero',
       '<h1 data-editable>DART <span>KNIGHTS</span></h1>' +
       '<div class="sub" data-editable>AUSWERTUNG COMPETITION</div>' +
       '<div class="infos"><span>Anmeldung bis <strong>18:15 Uhr</strong></span><span>·</span><span>Jeden Mittwoch <strong>18:30 Uhr</strong></span></div>' +
-      '<button class="btn" type="button" data-cta>ANMELDUNG NÄCHSTE WOCHE</button>' +
+      cta +
       (meta && meta.stand ? '<div class="infos"><span>' + esc(meta.stand) + '</span></div>' : ''));
     var w = widget(wid, n);
     var btn = w.querySelector('[data-cta]');
-    btn.addEventListener('click', function () { location.hash = '#/startseite'; window.scrollTo(0, 0); });
+    if (btn) btn.addEventListener('click', function () { location.hash = '#/startseite'; window.scrollTo(0, 0); });
     return w;
   }
 
@@ -477,7 +521,8 @@
   }
   function rowsToTable(wid, arr, order, opts) {
     if (!arr || !arr.length) return dataTable(wid, [], []);
-    var headers = order || Object.keys(arr[0]);
+    // "status" ist nur Filterkriterium (Anmeldungs-Slicer), keine Anzeigespalte.
+    var headers = order || Object.keys(arr[0]).filter(function (k) { return k !== 'status'; });
     var rows = arr.map(function (o) { return headers.map(function (k) { return o[k]; }); });
     var labels = headers.map(function (k) { return k.charAt(0).toUpperCase() + k.slice(1); });
     var o2 = { sortable: true };
@@ -500,17 +545,13 @@
   R.startseite = function (root, D) {
     var d = D.startseite || {};
     root.appendChild(head('startseite', get(D, 'meta.stand', '')));
-    root.appendChild(heroBlock('startseite.0', D.meta));
+    root.appendChild(heroBlock('startseite.0', D.meta, d.anmeldung));
     var kpis = d.kpis || [];
     if (!kpis.length) root.appendChild(notice('Keine Kennzahlen in data/startseite.json.'));
     else root.appendChild(grid(kpis.slice(0, 3).map(function (k, i) {
       return statCard('startseite.' + (i + 1), k.titel || ('KPI ' + (i + 1)), k.wert != null ? k.wert : '–', k.sub || '');
     }), 'cards'));
-    var a = d.anmeldung || {};
-    var p = el('div', 'panel', '<p class="label" data-editable>' + esc(a.titel || 'Anmeldung') + '</p>' +
-      '<h3 data-editable>' + esc(a.text || 'Anmeldung bis 18:15 Uhr · Jeden Mittwoch 18:30 Uhr') + '</h3>' +
-      '<p><a class="btn" style="display:inline-block;text-decoration:none" href="' + esc(a.link || '#') + '" data-editable>' + esc(a.cta || 'ANMELDUNG NÄCHSTE WOCHE') + '</a></p>');
-    root.appendChild(widget('startseite.4', p));
+    // Anmeldungs-Panel entfernt – der Button lebt jetzt oben im Hero.
   };
 
   R.setzliste = function (root, D, state) {
@@ -599,72 +640,80 @@
 
   R.h2h = function (root, D, state) {
     var E = ENG();
-    root.appendChild(head('h2h', 'Direktvergleich zweier Spieler'));
+    root.appendChild(head('h2h', ''));
     var players = E ? E.players() : (get(D, 'h2h.spieler', []) || []);
     if (players.length < 2) { root.appendChild(notice('H2H braucht 2 Spieler.')); players = ['Thorsten Kasper', 'Sebastian Reinke']; }
     state.a = state.a || players[players.indexOf('Thorsten Kasper') !== -1 ? players.indexOf('Thorsten Kasper') : 0];
     state.b = state.b || players[players.indexOf('Sebastian Reinke') !== -1 ? players.indexOf('Sebastian Reinke') : 1];
     if (state.a === state.b) state.b = players[(players.indexOf(state.a) + 1) % players.length];
-    root.appendChild(grid([
-      slicerDropdown('h2h.0', 'Spieler A', players, state.a, function (v) { state.a = v; refresh(); }),
-      slicerDropdown('h2h.1', 'Spieler B', players, state.b, function (v) { state.b = v; refresh(); })
-    ], 'two'));
     var hb = E ? E.h2h(state.a, state.b) : {
-      zeilen: get(D, 'h2h.zeilen', []),
+      tabelle: (get(D, 'h2h.tabelle', []) || []).length ? get(D, 'h2h.tabelle', [])
+        : (get(D, 'h2h.zeilen', []) || []).map(function (z) { return { label: z.label, sa: '–', ha: z.a, hb: z.b, sb: '–' }; }),
       trend: get(D, 'h2h.trend', {}),
       winProb: get(D, 'h2h.winProb', { a: 0.5, b: 0.5 }),
       bilanz: get(D, 'h2h.bilanz', {})
     };
-    // Gesamt-Zwischenstand der direkten Duelle
-    (function () {
-      var bl = hb.bilanz || {};
-      var ba = Number(bl.a || 0), bb = Number(bl.b || 0);
-      var du = Number(bl.duelle || 0), la = Number(bl.legsA || 0), lb = Number(bl.legsB || 0);
-      var ca = ba > bb ? ' win' : '', cb = bb > ba ? ' win' : '';
-      var sc = el('div', 'scoreboard',
-        '<div class="score-names"><span>' + esc(state.a) + '</span><span>' + esc(state.b) + '</span></div>' +
-        '<div class="score-nums"><span class="' + ca + '">' + ba + '</span><span class="sep">:</span><span class="' + cb + '">' + bb + '</span></div>' +
-        '<div class="score-sub" data-editable>Gesamt · ' + du + ' Duelle · Legs ' + la + ' : ' + lb + '</div>');
-      root.appendChild(widget('h2h.5', sc));
-    })();
-    var zeilen = hb.zeilen || [];
-    var box = el('div', 'h2h-rows');
-    if (!zeilen.length) box.appendChild(notice('Keine Vergleichszeilen gefunden.'));
-    zeilen.forEach(function (z) {
-      var fa = z.pct ? (Number(z.a) * 100).toLocaleString('de-DE') + ' %' : fmtDE(z.a);
-      var fb = z.pct ? (Number(z.b) * 100).toLocaleString('de-DE') + ' %' : fmtDE(z.b);
-      box.appendChild(el('div', '', '<div class="h2h-row"><span class="l">' + fa + '</span><span class="m" data-editable>' + esc(z.label) + '</span><span class="r">' + fb + '</span></div>'));
+    // Kopfzeile im Report-Layout: Auswahl + Bilanz + VS
+    var bl = hb.bilanz || {};
+    var ba = Number(bl.a || 0), bb = Number(bl.b || 0);
+    var du = Number(bl.duelle || 0), la = Number(bl.legsA || 0), lb = Number(bl.legsB || 0);
+    var top = el('div', 'h2h-top');
+    top.appendChild(slicerDropdown('h2h.0', 'Spieler A', players, state.a, function (v) { state.a = v; refresh(); }));
+    top.appendChild(el('div', 'h2h-mid',
+      '<span class="bilanz' + (ba > bb ? ' win' : '') + '">' + ba + '</span>' +
+      '<span class="vs-badge">VS</span>' +
+      '<span class="bilanz' + (bb > ba ? ' win' : '') + '">' + bb + '</span>'));
+    top.appendChild(slicerDropdown('h2h.1', 'Spieler B', players, state.b, function (v) { state.b = v; refresh(); }));
+    var topW = widget('h2h.5', top);
+    topW.appendChild(el('div', 'h2h-duelle', 'Gesamt · ' + du + ' Duelle · Legs ' + la + ' : ' + lb));
+    root.appendChild(topW);
+    // Kennzahlen: Saison-Wert vs. Direktduell-Wert je Spieler
+    var tab = hb.tabelle || [];
+    var tbox = el('div', 'h2h5');
+    tbox.appendChild(el('div', 'h2h5-sub',
+      '<span>Saison</span><span>H2H</span><span></span><span>H2H</span><span>Saison</span>'));
+    if (!tab.length) tbox.appendChild(notice('Keine Vergleichszeilen gefunden.'));
+    tab.forEach(function (z) {
+      tbox.appendChild(el('div', 'h2h5-row',
+        '<span class="v">' + fmtDE(z.sa) + '</span>' +
+        '<span class="v">' + fmtDE(z.ha) + '</span>' +
+        '<span class="lab" data-editable>' + esc(z.label) + '</span>' +
+        '<span class="v">' + fmtDE(z.hb) + '</span>' +
+        '<span class="v">' + fmtDE(z.sb) + '</span>'));
     });
-    root.appendChild(widget('h2h.2', box));
-    // Trend
-    var tr = el('div', '');
-    tr.innerHTML = '<p class="label">Trend (W = Sieg, L = Niederlage)</p>';
-    [state.a, state.b].forEach(function (p) {
+    root.appendChild(widget('h2h.6', tbox));
+    // Trend + Win-Probability in einer Zeile (Report-Layout)
+    function ticks(p) {
       var arr = ((hb.trend || {})[p]) || [];
-      var row = el('div', '', '<p style="margin:8px 0 4px"><b>' + esc(p) + '</b></p>');
       var t = el('div', 'trend');
-      if (!arr.length) t.appendChild(notice('Kein Trend für ' + p + '.'));
       arr.forEach(function (x) {
-        var k = String(x).toUpperCase() === 'W' ? 'w' : String(x).toUpperCase() === 'L' ? 'l' : '';
-        t.appendChild(el('span', 'tick ' + k, esc(x)));
+        var u = String(x).toUpperCase();
+        t.appendChild(el('span', 'tick ' + (u === 'W' ? 'w' : u === 'L' ? 'l' : ''), esc(x)));
       });
-      row.appendChild(t); tr.appendChild(row);
-    });
-    root.appendChild(widget('h2h.3', tr));
-    // Win-Probability
+      return t;
+    }
+    function pct2(x) {
+      return (Number(x) * 100).toLocaleString('de-DE', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' %';
+    }
     var wp = hb.winProb || { a: 0.5, b: 0.5 };
-    var pa = Math.round(Number(wp.a) * 100), pb = Math.round(Number(wp.b) * 100);
-    var wbox = el('div', '', '<p class="label" data-editable>Win-Probability</p>' +
-      '<div class="prob"><span class="a" style="width:' + pa + '%"></span><span class="b" style="width:' + pb + '%"></span></div>' +
-      '<p><b>' + esc(state.a) + ' ' + pa + ' %</b> · ' + esc(state.b) + ' ' + pb + ' %</p>');
-    root.appendChild(widget('h2h.4', wbox));
+    var bot = el('div', 'h2h-bot');
+    bot.appendChild(ticks(state.a));
+    bot.appendChild(el('span', 'winpct', esc(pct2(wp.a))));
+    bot.appendChild(el('span', 'lab', 'Trend/Win Probability'));
+    bot.appendChild(el('span', 'winpct', esc(pct2(wp.b))));
+    bot.appendChild(ticks(state.b));
+    root.appendChild(widget('h2h.7', bot));
   };
 
   R.vergleich = function (root, D, state) {
     var E = ENG();
     root.appendChild(head('vergleich', 'Alle Spieler im Überblick (klickbar sortierbar)'));
     var wmax = E ? E.maxWeek() : 34;
-    state.lo = state.lo || 4; state.hi = state.hi || wmax;
+    // Saison-unabhängig: Range auf vorhandene Wochen klemmen.
+    state.lo = state.lo || Math.min(4, wmax); state.hi = state.hi || wmax;
+    if (state.lo > wmax) state.lo = wmax;
+    if (state.hi > wmax) state.hi = wmax;
+    if (state.lo > state.hi) state.lo = state.hi;
     var dyn = el('div', '');
     root.appendChild(grid([
       slicerRange('vergleich.9', 'Woche', 1, wmax, state.lo, state.hi, function (a, b) { state.lo = a; state.hi = b; draw(); })
@@ -690,7 +739,11 @@
     state.sp = state.sp || (players.indexOf('Nicnaks Winkler') !== -1 ? 'Nicnaks Winkler' : players[0]);
     state.avg = state.avg || 'AVERAGE';
     var wmax = E ? E.maxWeek() : 34;
-    state.lo = state.lo || 4; state.hi = state.hi || wmax;
+    // Saison-unabhängig: Range auf vorhandene Wochen klemmen.
+    state.lo = state.lo || Math.min(4, wmax); state.hi = state.hi || wmax;
+    if (state.lo > wmax) state.lo = wmax;
+    if (state.hi > wmax) state.hi = wmax;
+    if (state.lo > state.hi) state.lo = state.hi;
     root.appendChild(grid([
       slicerDropdown('spieler1.0', 'Spieler', players, state.sp, function (v) { state.sp = v; refresh(); }),
       slicerRange('spieler1.1', 'Woche', 1, wmax, state.lo, state.hi, function (a, b) { state.lo = a; state.hi = b; draw(); })
@@ -893,9 +946,10 @@
       for (var s = 1; s <= mx; s++) sts.push('Spieltag ' + s);
     } else (get(D, 'gruppen.spieltage', []) || []).forEach(function (x) { sts.push(x); });
     state.g = state.g || (gs.indexOf('Gruppe 1') !== -1 ? 'Gruppe 1' : gs[0]);
-    state.st = state.st || 'Spieltag 34';
-    var stNum = parseInt(String(state.st).replace(/\D+/g, ''), 10) || 34;
     var wmax = E ? E.maxWeek() : 34;
+    // Spieltag-Default: immer der neueste (saison-unabhängig).
+    state.st = state.st || sts[sts.length - 1] || ('Spieltag ' + wmax);
+    var stNum = parseInt(String(state.st).replace(/\D+/g, ''), 10) || wmax;
     state.lo = state.lo || 1; state.hi = state.hi || wmax;
     root.appendChild(grid([
       slicerDropdown('gruppen.0', 'Gruppe', gs, state.g, function (v) { state.g = v; refresh(); }),
@@ -921,7 +975,7 @@
     }
     function draw() {
       dyn.innerHTML = '';
-      stNum = parseInt(String(state.st).replace(/\D+/g, ''), 10) || 34;
+      stNum = parseInt(String(state.st).replace(/\D+/g, ''), 10) || wmax;
       var gv = E ? E.gruppenView(state.g, stNum, state.lo, state.hi) : null;
       var sieger = gv ? gv.sieger : get(D, 'gruppen.sieger', []);
       var teiln = gv ? gv.teilnahmen : get(D, 'gruppen.teilnahmen', []);
@@ -1053,7 +1107,7 @@
   }
 
   function fetchOne(name) {
-    return fetch('data/' + name + '.json', { cache: 'no-store' })
+    return fetch('data/' + SEASON + '/' + name + '.json', { cache: 'no-store' })
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
       .catch(function () { return null; });
   }
@@ -1071,7 +1125,18 @@
       if (p && p !== current) showPage(p);
     });
     loader.hidden = false;
-    Promise.all(FILES.map(fetchOne)).then(function (list) {
+    // Saisonliste laden (statisch, ohne Server), dann Saisondaten.
+    fetch('data/seasons.json', { cache: 'no-store' }).then(function (r) {
+      return r.ok ? r.json() : null;
+    }).catch(function () { return null; }).then(function (sj) {
+      if (sj && sj.order && sj.order.length) {
+        SEASONS = { order: sj.order, labels: sj.labels || {}, def: sj.default || sj.order[0] };
+      }
+      SEASON = resolveSeason();
+      window.DK_SEASON = SEASON;
+      buildSeasonSel();
+      return Promise.all(FILES.map(fetchOne));
+    }).then(function (list) {
       var missing = 0;
       FILES.forEach(function (name, i) {
         if (list[i]) DATA[name] = list[i];
@@ -1101,6 +1166,7 @@
     showPage: showPage, refresh: refresh,
     get current() { return current; },
     get data() { return DATA; },
+    get season() { return SEASON; },
     state: stateByPage
   };
   window.DK_COMP = {

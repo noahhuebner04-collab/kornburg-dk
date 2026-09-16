@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <!-- Optional: Google-Font mit System-Fallback (kein Pflicht-CDN) -->
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=16">
+<link rel="stylesheet" href="css/style.css?v=20">
 </head>
 <body>
 <header class="topbar">
@@ -20,6 +20,7 @@
     </div>
     <nav class="tabs" aria-label="Hauptbereich">
       <button class="tab is-active" type="button">Competition</button>
+      <select id="seasonSel" class="season-sel" aria-label="Saison wählen" title="Saison wählen"></select>
     </nav>
     <button id="adminBtn" class="btn btn-ghost" type="button" title="Admin-Modus (?admin=1)">Admin</button>
   </div>
@@ -47,7 +48,7 @@
   <button id="btnPin" type="button" class="btn btn-small btn-ghost">PIN ändern</button>
   <button id="btnData" type="button" class="btn btn-small btn-ghost">Daten</button>
   <button id="btnReset" type="button" class="btn btn-small btn-ghost">Zurücksetzen</button>
-  <span class="adminbar-hint">Datenneuberechnung läuft über <code>tools/build_data.py</code> (separat).</span>
+  <span class="adminbar-hint">Daten &amp; Deploy laufen per Knopfdruck unter „Daten“ (lokaler Server).</span>
 </div>
 <div id="dataPanel" class="datapanel" hidden>
   <p><b>Datenstand:</b> <span id="dataStand">–</span> <span id="srvStand" class="muted"></span></p>
@@ -56,6 +57,12 @@
     <span id="refreshStatus" class="muted"></span>
   </div>
   <pre id="refreshLog" class="refresh-log" hidden></pre>
+  <p><b>Veröffentlichen</b> (lokale Seite → GitHub Pages): <span id="deployRemote" class="muted"></span></p>
+  <div class="imp-row">
+    <button id="btnDeploy" type="button" class="btn btn-small">Auf GitHub deployen</button>
+    <span id="deployStatus" class="muted"></span>
+  </div>
+  <pre id="deployLog" class="refresh-log" hidden></pre>
   <div class="imp">
     <p><b>Wochen-Import</b> (wie altes Programm, aber Werte statt Formeln):</p>
     <label for="impUrls">Turnier-URLs (eine pro Zeile):</label>
@@ -103,9 +110,9 @@
 
 <script src="js/vendor/xlsx.full.min.js"></script>
 <script src="js/charts.js?v=6"></script>
-<script src="js/compute.js?v=8"></script>
-<script src="js/app.js?v=15"></script>
+<script src="js/compute.js?v=9"></script>
+<script src="js/app.js?v=18"></script>
 <script src="js/import.js?v=4"></script>
-<script src="js/admin.js?v=10"></script>
+<script src="js/admin.js?v=13"></script>
 </body>
 </html>
