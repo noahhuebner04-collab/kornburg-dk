@@ -351,16 +351,36 @@
     if (init && Array.prototype.some.call(sel.options, function (o) { return o.value === init; })) {
       sel.value = init;
     }
+    var committed = sel.value;
+    function commit(v) {
+      if (v == null || v === '') return;
+      if (v === committed) return;
+      committed = v;
+      sel.value = v;
+      if (onchange) onchange(v);
+    }
     if (search) {
       search.addEventListener('input', function () { fill(search.value); });
       search.addEventListener('keydown', function (e) {
         if (e.key === 'Enter' && sel.options.length) {
-          sel.selectedIndex = 0;
-          if (onchange) onchange(sel.value);
+          commit(sel.options[0].value);
         }
       });
+      // Tippt man den vollen Namen und klickt/tabbt weiter, muss die Auswahl
+      // übernommen werden – sonst zeigt das Feld einen Namen, dessen
+      // Statistik nie geladen wurde (kein change-Event beim Filtern).
+      search.addEventListener('blur', function () {
+        var q = String(search.value || '').toLowerCase().trim();
+        if (!q) return;
+        var exact = null;
+        Array.prototype.forEach.call(sel.options, function (o) {
+          if (String(o.value).toLowerCase() === q) exact = o.value;
+        });
+        if (exact != null) { commit(exact); return; }
+        if (sel.options.length === 1) commit(sel.options[0].value);
+      });
     }
-    sel.addEventListener('change', function () { if (onchange) onchange(sel.value); });
+    sel.addEventListener('change', function () { committed = sel.value; if (onchange) onchange(sel.value); });
     box.appendChild(sel);
     return widget(wid, box);
   }
