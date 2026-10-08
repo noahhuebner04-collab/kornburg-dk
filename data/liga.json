@@ -1,0 +1,3753 @@
+{
+ "stand": "08.10.2026 01:06",
+ "club": "1722",
+ "teams": [
+  {
+   "team": "TSV Kornburg DartKnights",
+   "league": "3. Bezirksliga A",
+   "championship": "MFr+2026%2F27",
+   "group": "211773",
+   "kurz": "1. Mannschaft",
+   "tabelle": {
+    "headers": [
+     "Rang",
+     "Team",
+     "S",
+     "U",
+     "N",
+     "Spiele",
+     "+/-",
+     "Legs",
+     "Punkte"
+    ],
+    "rows": [
+     {
+      "rang": 1,
+      "team": "Blue Bull‘s Winkelhaid",
+      "teamtable": "1530382",
+      "su_n": [
+       "2",
+       "0",
+       "0"
+      ],
+      "spiele": "22:10",
+      "diff": "+12",
+      "legs": "77:51",
+      "punkte": "4:0"
+     },
+     {
+      "rang": 2,
+      "team": "TSV Kornburg DartKnights",
+      "teamtable": "1530451",
+      "su_n": [
+       "2",
+       "0",
+       "0"
+      ],
+      "spiele": "19:13",
+      "diff": "+6",
+      "legs": "71:54",
+      "punkte": "4:0"
+     },
+     {
+      "rang": 3,
+      "team": "TSG 08 Roth III",
+      "teamtable": "1530385",
+      "su_n": [
+       "1",
+       "0",
+       "0"
+      ],
+      "spiele": "12:4",
+      "diff": "+8",
+      "legs": "39:19",
+      "punkte": "2:0"
+     },
+     {
+      "rang": 4,
+      "team": "Finnigan's Harp Nbg. V",
+      "teamtable": "1530422",
+      "su_n": [
+       "1",
+       "0",
+       "0"
+      ],
+      "spiele": "9:7",
+      "diff": "+2",
+      "legs": "37:25",
+      "punkte": "2:0"
+     },
+     {
+      "rang": 5,
+      "team": "DC Franken-Power V",
+      "teamtable": "1530421",
+      "su_n": [
+       "1",
+       "0",
+       "1"
+      ],
+      "spiele": "16:16",
+      "diff": "0",
+      "legs": "59:65",
+      "punkte": "2:2"
+     },
+     {
+      "rang": 6,
+      "team": "Brucklyn Bulls",
+      "teamtable": "1532633",
+      "su_n": [
+       "0",
+       "0",
+       "1"
+      ],
+      "spiele": "6:10",
+      "diff": "-4",
+      "legs": "29:35",
+      "punkte": "0:2"
+     },
+     {
+      "rang": 7,
+      "team": "BV Bergen II",
+      "teamtable": "1530384",
+      "su_n": [
+       "0",
+       "0",
+       "1"
+      ],
+      "spiele": "4:12",
+      "diff": "-8",
+      "legs": "27:41",
+      "punkte": "0:2"
+     },
+     {
+      "rang": 8,
+      "team": "Golden Arrows III",
+      "teamtable": "1530395",
+      "su_n": [
+       "0",
+       "0",
+       "2"
+      ],
+      "spiele": "13:19",
+      "diff": "-6",
+      "legs": "52:71",
+      "punkte": "0:4"
+     },
+     {
+      "rang": 9,
+      "team": "DSC Hesselberg III",
+      "teamtable": "1530400",
+      "su_n": [
+       "0",
+       "0",
+       "2"
+      ],
+      "spiele": "11:21",
+      "diff": "-10",
+      "legs": "46:76",
+      "punkte": "0:4"
+     }
+    ]
+   },
+   "spielplan": [
+    {
+     "tag": "Fri",
+     "datum": "18.09.2026",
+     "zeit": "19:00",
+     "ort": "09060520",
+     "heim": "TSG 08 Roth III",
+     "gast": "DSC Hesselberg III",
+     "ergebnis": "12:4"
+    },
+    {
+     "tag": "Fri",
+     "datum": "25.09.2026",
+     "zeit": "20:00",
+     "ort": "09060220",
+     "heim": "Finnigan's Harp Nbg. V",
+     "gast": "Golden Arrows III",
+     "ergebnis": "9:7"
+    },
+    {
+     "tag": "Sat",
+     "datum": "26.09.2026",
+     "zeit": "19:00",
+     "ort": "09060790",
+     "heim": "Brucklyn Bulls",
+     "gast": "DC Franken-Power V",
+     "ergebnis": "6:10"
+    },
+    {
+     "tag": "Fri",
+     "datum": "02.10.2026",
+     "zeit": "20:00",
+     "ort": "09060300",
+     "heim": "Blue Bull‘s Winkelhaid",
+     "gast": "BV Bergen II",
+     "ergebnis": "12:4"
+    },
+    {
+     "tag": "Fri",
+     "datum": "09.10.2026",
+     "zeit": "20:00",
+     "ort": "09060140",
+     "heim": "BV Bergen II",
+     "gast": "Finnigan's Harp Nbg. V",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "16.10.2026",
+     "zeit": "20:00",
+     "ort": "09060300",
+     "heim": "Blue Bull‘s Winkelhaid",
+     "gast": "TSV Kornburg DartKnights",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "18.10.2026",
+     "zeit": "17:00",
+     "ort": "09060570",
+     "heim": "Golden Arrows III",
+     "gast": "DSC Hesselberg III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "23.10.2026",
+     "zeit": "20:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights",
+     "gast": "TSG 08 Roth III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "24.10.2026",
+     "zeit": "19:00",
+     "ort": "09060790",
+     "heim": "Brucklyn Bulls",
+     "gast": "BV Bergen II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "25.10.2026",
+     "zeit": "17:00",
+     "ort": "09060570",
+     "heim": "Golden Arrows III",
+     "gast": "DC Franken-Power V",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "06.11.2026",
+     "zeit": "20:00",
+     "ort": "09060350",
+     "heim": "DC Franken-Power V",
+     "gast": "TSV Kornburg DartKnights",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "07.11.2026",
+     "zeit": "20:00",
+     "ort": "09060140",
+     "heim": "BV Bergen II",
+     "gast": "TSG 08 Roth III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "27.11.2026",
+     "zeit": "19:00",
+     "ort": "09060520",
+     "heim": "TSG 08 Roth III",
+     "gast": "Golden Arrows III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "28.11.2026",
+     "zeit": "19:00",
+     "ort": "09060790",
+     "heim": "Brucklyn Bulls",
+     "gast": "Blue Bull‘s Winkelhaid",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "04.12.2026",
+     "zeit": "20:00",
+     "ort": "09060300",
+     "heim": "Blue Bull‘s Winkelhaid",
+     "gast": "TSG 08 Roth III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "05.12.2026",
+     "zeit": "20:00",
+     "ort": "09060460",
+     "heim": "DSC Hesselberg III",
+     "gast": "BV Bergen II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "06.12.2026",
+     "zeit": "17:00",
+     "ort": "09060570",
+     "heim": "Golden Arrows III",
+     "gast": "Brucklyn Bulls",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "11.12.2026",
+     "zeit": "20:00",
+     "ort": "09060220",
+     "heim": "Finnigan's Harp Nbg. V",
+     "gast": "TSG 08 Roth III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "12.12.2026",
+     "zeit": "19:00",
+     "ort": "09060790",
+     "heim": "Brucklyn Bulls",
+     "gast": "TSV Kornburg DartKnights",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "13.12.2026",
+     "zeit": "17:00",
+     "ort": "09060570",
+     "heim": "Golden Arrows III",
+     "gast": "BV Bergen II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "08.01.2027",
+     "zeit": "19:00",
+     "ort": "09060520",
+     "heim": "TSG 08 Roth III",
+     "gast": "Brucklyn Bulls",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "09.01.2027",
+     "zeit": "20:00",
+     "ort": "09060140",
+     "heim": "BV Bergen II",
+     "gast": "DC Franken-Power V",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "29.01.2027",
+     "zeit": "20:00",
+     "ort": "09060350",
+     "heim": "DC Franken-Power V",
+     "gast": "Blue Bull‘s Winkelhaid",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "30.01.2027",
+     "zeit": "20:00",
+     "ort": "09060460",
+     "heim": "DSC Hesselberg III",
+     "gast": "TSG 08 Roth III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "31.01.2027",
+     "zeit": "17:00",
+     "ort": "09060570",
+     "heim": "Golden Arrows III",
+     "gast": "TSV Kornburg DartKnights",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "12.02.2027",
+     "zeit": "20:00",
+     "ort": "09060350",
+     "heim": "DC Franken-Power V",
+     "gast": "Brucklyn Bulls",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "13.02.2027",
+     "zeit": "20:00",
+     "ort": "09060140",
+     "heim": "BV Bergen II",
+     "gast": "Blue Bull‘s Winkelhaid",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "14.02.2027",
+     "zeit": "17:00",
+     "ort": "09060570",
+     "heim": "Golden Arrows III",
+     "gast": "Finnigan's Harp Nbg. V",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "26.02.2027",
+     "zeit": "19:00",
+     "ort": "09060520",
+     "heim": "TSG 08 Roth III",
+     "gast": "DC Franken-Power V",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "27.02.2027",
+     "zeit": "19:00",
+     "ort": "09060790",
+     "heim": "Brucklyn Bulls",
+     "gast": "Finnigan's Harp Nbg. V",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "05.03.2027",
+     "zeit": "19:00",
+     "ort": "09060520",
+     "heim": "TSG 08 Roth III",
+     "gast": "TSV Kornburg DartKnights",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "06.03.2027",
+     "zeit": "20:00",
+     "ort": "09060140",
+     "heim": "BV Bergen II",
+     "gast": "Brucklyn Bulls",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "19.03.2027",
+     "zeit": "19:00",
+     "ort": "09060520",
+     "heim": "TSG 08 Roth III",
+     "gast": "BV Bergen II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "20.03.2027",
+     "zeit": "19:00",
+     "ort": "09060790",
+     "heim": "Brucklyn Bulls",
+     "gast": "DSC Hesselberg III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "02.04.2027",
+     "zeit": "20:00",
+     "ort": "09060300",
+     "heim": "Blue Bull‘s Winkelhaid",
+     "gast": "Brucklyn Bulls",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "04.04.2027",
+     "zeit": "17:00",
+     "ort": "09060570",
+     "heim": "Golden Arrows III",
+     "gast": "TSG 08 Roth III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "16.04.2027",
+     "zeit": "19:00",
+     "ort": "09060520",
+     "heim": "TSG 08 Roth III",
+     "gast": "Blue Bull‘s Winkelhaid",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "17.04.2027",
+     "zeit": "19:00",
+     "ort": "09060790",
+     "heim": "Brucklyn Bulls",
+     "gast": "Golden Arrows III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "30.04.2027",
+     "zeit": "19:00",
+     "ort": "09060520",
+     "heim": "TSG 08 Roth III",
+     "gast": "Finnigan's Harp Nbg. V",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "01.05.2027",
+     "zeit": "20:00",
+     "ort": "09060140",
+     "heim": "BV Bergen II",
+     "gast": "Golden Arrows III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "14.05.2027",
+     "zeit": "20:00",
+     "ort": "09060350",
+     "heim": "DC Franken-Power V",
+     "gast": "BV Bergen II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "15.05.2027",
+     "zeit": "19:00",
+     "ort": "09060790",
+     "heim": "Brucklyn Bulls",
+     "gast": "TSG 08 Roth III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "16.05.2027",
+     "zeit": "17:00",
+     "ort": "09060570",
+     "heim": "Golden Arrows III",
+     "gast": "Blue Bull‘s Winkelhaid",
+     "ergebnis": ""
+    }
+   ],
+   "teamtable": "1530451",
+   "teamid": "1224293",
+   "ical": "https://bdv-dart.liga.nu/cgi-bin/WebObjects/nuLigaDARTDE.woa/wa/getTeamMeetingsWebcal?teamid=1224293&token=Zrxp4lBKnxk=",
+   "webcal": "webcal://bdv-dart.liga.nu/cgi-bin/WebObjects/nuLigaDARTDE.woa/wa/getTeamMeetingsWebcal?teamid=1224293&token=Zrxp4lBKnxk=",
+   "halle": "Sportheim TSV Kornburg (09060440)",
+   "spieler": [
+    {
+     "rang": "1.2",
+     "name": "Winkler, Nicolas",
+     "einsaetze": "2",
+     "bilanz": "1:4"
+    },
+    {
+     "rang": "1.1",
+     "name": "Schmidt, Maximilian",
+     "einsaetze": "1",
+     "bilanz": "0:1"
+    },
+    {
+     "rang": "1.3",
+     "name": "Fenk, William",
+     "einsaetze": "2",
+     "bilanz": "4:1"
+    },
+    {
+     "rang": "1.6",
+     "name": "Wißmeier, Markus",
+     "einsaetze": "2",
+     "bilanz": "2:3"
+    },
+    {
+     "rang": "1.4",
+     "name": "Raab, Julian",
+     "einsaetze": "2",
+     "bilanz": "4:2"
+    },
+    {
+     "rang": "1.5",
+     "name": "Mikutta, Lukas",
+     "einsaetze": "0",
+     "bilanz": ""
+    }
+   ],
+   "termine": [
+    {
+     "tag": "Fri",
+     "datum": "18.09.2026",
+     "zeit": "20:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights",
+     "gast": "Golden Arrows III",
+     "ergebnis": "10:6"
+    },
+    {
+     "tag": "Fri",
+     "datum": "25.09.2026",
+     "zeit": "20:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights",
+     "gast": "DSC Hesselberg III",
+     "ergebnis": "9:7"
+    },
+    {
+     "tag": "Fri",
+     "datum": "16.10.2026",
+     "zeit": "20:00",
+     "ort": "09060300",
+     "heim": "Blue Bull‘s Winkelhaid",
+     "gast": "TSV Kornburg DartKnights",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "23.10.2026",
+     "zeit": "20:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights",
+     "gast": "TSG 08 Roth III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "06.11.2026",
+     "zeit": "20:00",
+     "ort": "09060350",
+     "heim": "DC Franken-Power V",
+     "gast": "TSV Kornburg DartKnights",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "28.11.2026",
+     "zeit": "20:00",
+     "ort": "09060140",
+     "heim": "BV Bergen II",
+     "gast": "TSV Kornburg DartKnights",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "04.12.2026",
+     "zeit": "20:00",
+     "ort": "09060220",
+     "heim": "Finnigan's Harp Nbg. V",
+     "gast": "TSV Kornburg DartKnights",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "12.12.2026",
+     "zeit": "19:00",
+     "ort": "09060790",
+     "heim": "Brucklyn Bulls",
+     "gast": "TSV Kornburg DartKnights",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "31.01.2027",
+     "zeit": "17:00",
+     "ort": "09060570",
+     "heim": "Golden Arrows III",
+     "gast": "TSV Kornburg DartKnights",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "13.02.2027",
+     "zeit": "20:00",
+     "ort": "09060460",
+     "heim": "DSC Hesselberg III",
+     "gast": "TSV Kornburg DartKnights",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "26.02.2027",
+     "zeit": "20:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights",
+     "gast": "Blue Bull‘s Winkelhaid",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "05.03.2027",
+     "zeit": "19:00",
+     "ort": "09060520",
+     "heim": "TSG 08 Roth III",
+     "gast": "TSV Kornburg DartKnights",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "19.03.2027",
+     "zeit": "20:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights",
+     "gast": "DC Franken-Power V",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "02.04.2027",
+     "zeit": "20:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights",
+     "gast": "BV Bergen II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "16.04.2027",
+     "zeit": "20:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights",
+     "gast": "Finnigan's Harp Nbg. V",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "30.04.2027",
+     "zeit": "20:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights",
+     "gast": "Brucklyn Bulls",
+     "ergebnis": ""
+    }
+   ],
+   "ics_datei": "team1.ics",
+   "rang": 2,
+   "punkte": "4:0"
+  },
+  {
+   "team": "TSV Kornburg DartKnights II",
+   "league": "3. Bezirksliga D",
+   "championship": "MFr+2026%2F27",
+   "group": "211774",
+   "kurz": "2. Mannschaft",
+   "tabelle": {
+    "headers": [
+     "Rang",
+     "Team",
+     "S",
+     "U",
+     "N",
+     "Spiele",
+     "+/-",
+     "Legs",
+     "Punkte"
+    ],
+    "rows": [
+     {
+      "rang": 1,
+      "team": "Dartverein Erlangen e.V. IV",
+      "teamtable": "1532622",
+      "su_n": [
+       "2",
+       "0",
+       "0"
+      ],
+      "spiele": "23:9",
+      "diff": "+14",
+      "legs": "84:45",
+      "punkte": "4:0"
+     },
+     {
+      "rang": 2,
+      "team": "DC LaBamba Bad Windsheim III",
+      "teamtable": "1532573",
+      "su_n": [
+       "1",
+       "0",
+       "0"
+      ],
+      "spiele": "13:3",
+      "diff": "+10",
+      "legs": "43:22",
+      "punkte": "2:0"
+     },
+     {
+      "rang": 3,
+      "team": "DartKnights Dietenhofen",
+      "teamtable": "1532641",
+      "su_n": [
+       "1",
+       "0",
+       "0"
+      ],
+      "spiele": "11:5",
+      "diff": "+6",
+      "legs": "41:23",
+      "punkte": "2:0"
+     },
+     {
+      "rang": 4,
+      "team": "DC Franken-Power IV",
+      "teamtable": "1532580",
+      "su_n": [
+       "1",
+       "0",
+       "0"
+      ],
+      "spiele": "11:5",
+      "diff": "+6",
+      "legs": "34:24",
+      "punkte": "2:0"
+     },
+     {
+      "rang": 5,
+      "team": "SV Viktoria Darts Weigenheim",
+      "teamtable": "1532650",
+      "su_n": [
+       "0",
+       "0",
+       "0"
+      ],
+      "spiele": "0:0",
+      "diff": "0",
+      "legs": "0:0",
+      "punkte": "0:0"
+     },
+     {
+      "rang": 6,
+      "team": "TSV Kornburg DartKnights II",
+      "teamtable": "1532600",
+      "su_n": [
+       "0",
+       "0",
+       "1"
+      ],
+      "spiele": "5:11",
+      "diff": "-6",
+      "legs": "24:34",
+      "punkte": "0:2"
+     },
+     {
+      "rang": 7,
+      "team": "Kangaroots V",
+      "teamtable": "1532591",
+      "su_n": [
+       "0",
+       "0",
+       "1"
+      ],
+      "spiele": "4:12",
+      "diff": "-8",
+      "legs": "22:43",
+      "punkte": "0:2"
+     },
+     {
+      "rang": 8,
+      "team": "DC Tschambolaia IV",
+      "teamtable": "1532609",
+      "su_n": [
+       "0",
+       "0",
+       "1"
+      ],
+      "spiele": "3:13",
+      "diff": "-10",
+      "legs": "22:43",
+      "punkte": "0:2"
+     },
+     {
+      "rang": 9,
+      "team": "Blue Bulls Ellingen",
+      "teamtable": "1532628",
+      "su_n": [
+       "0",
+       "0",
+       "2"
+      ],
+      "spiele": "10:22",
+      "diff": "-12",
+      "legs": "46:82",
+      "punkte": "0:4"
+     }
+    ]
+   },
+   "spielplan": [
+    {
+     "tag": "Sat",
+     "datum": "19.09.2026",
+     "zeit": "19:00",
+     "ort": "09060490",
+     "heim": "Dartverein Erlangen e.V. IV",
+     "gast": "Blue Bulls Ellingen",
+     "ergebnis": "11:5"
+    },
+    {
+     "tag": "Fri",
+     "datum": "25.09.2026",
+     "zeit": "19:00",
+     "ort": "09060740",
+     "heim": "Blue Bulls Ellingen",
+     "gast": "DartKnights Dietenhofen",
+     "ergebnis": "5:11"
+    },
+    {
+     "tag": "Sun",
+     "datum": "27.09.2026",
+     "zeit": "13:00",
+     "ort": "09060330",
+     "heim": "Kangaroots V",
+     "gast": "Dartverein Erlangen e.V. IV",
+     "ergebnis": "4:12"
+    },
+    {
+     "tag": "Fri",
+     "datum": "09.10.2026",
+     "zeit": "20:00 t/",
+     "ort": "09060430",
+     "heim": "DC Tschambolaia IV",
+     "gast": "SV Viktoria Darts Weigenheim",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "10.10.2026",
+     "zeit": "17:00",
+     "ort": "09060640",
+     "heim": "DartKnights Dietenhofen",
+     "gast": "DC LaBamba Bad Windsheim III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "16.10.2026",
+     "zeit": "20:00",
+     "ort": "09060640",
+     "heim": "DartKnights Dietenhofen",
+     "gast": "Dartverein Erlangen e.V. IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "17.10.2026",
+     "zeit": "19:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights II",
+     "gast": "DC Tschambolaia IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "18.10.2026",
+     "zeit": "13:00",
+     "ort": "09060330",
+     "heim": "Kangaroots V",
+     "gast": "DC Franken-Power IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "23.10.2026",
+     "zeit": "20:00",
+     "ort": "09060010",
+     "heim": "DC LaBamba Bad Windsheim III",
+     "gast": "TSV Kornburg DartKnights II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "24.10.2026",
+     "zeit": "20:00",
+     "ort": "09060350",
+     "heim": "DC Franken-Power IV",
+     "gast": "DartKnights Dietenhofen",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "25.10.2026",
+     "zeit": "13:00",
+     "ort": "09060330",
+     "heim": "Kangaroots V",
+     "gast": "SV Viktoria Darts Weigenheim",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "06.11.2026",
+     "zeit": "20:00",
+     "ort": "09060010",
+     "heim": "DC LaBamba Bad Windsheim III",
+     "gast": "Kangaroots V",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "07.11.2026",
+     "zeit": "19:00",
+     "ort": "09060490",
+     "heim": "Dartverein Erlangen e.V. IV",
+     "gast": "DC Tschambolaia IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "27.11.2026",
+     "zeit": "19:00",
+     "ort": "09060740",
+     "heim": "Blue Bulls Ellingen",
+     "gast": "DC Franken-Power IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "29.11.2026",
+     "zeit": "13:00",
+     "ort": "09060330",
+     "heim": "Kangaroots V",
+     "gast": "DC Tschambolaia IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "04.12.2026",
+     "zeit": "20:00",
+     "ort": "09060010",
+     "heim": "DC LaBamba Bad Windsheim III",
+     "gast": "Blue Bulls Ellingen",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "05.12.2026",
+     "zeit": "19:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights II",
+     "gast": "Dartverein Erlangen e.V. IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "06.12.2026",
+     "zeit": "13:00",
+     "ort": "09060330",
+     "heim": "Kangaroots V",
+     "gast": "DartKnights Dietenhofen",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "11.12.2026",
+     "zeit": "19:00",
+     "ort": "09060740",
+     "heim": "Blue Bulls Ellingen",
+     "gast": "Kangaroots V",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "12.12.2026",
+     "zeit": "19:00",
+     "ort": "09060490",
+     "heim": "Dartverein Erlangen e.V. IV",
+     "gast": "SV Viktoria Darts Weigenheim",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "08.01.2027",
+     "zeit": "19:00",
+     "ort": "09060740",
+     "heim": "Blue Bulls Ellingen",
+     "gast": "SV Viktoria Darts Weigenheim",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "09.01.2027",
+     "zeit": "19:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights II",
+     "gast": "Kangaroots V",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "29.01.2027",
+     "zeit": "19:00",
+     "ort": "09060740",
+     "heim": "Blue Bulls Ellingen",
+     "gast": "DC LaBamba Bad Windsheim III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "30.01.2027",
+     "zeit": "19:00",
+     "ort": "09060490",
+     "heim": "Dartverein Erlangen e.V. IV",
+     "gast": "TSV Kornburg DartKnights II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "12.02.2027",
+     "zeit": "20:00",
+     "ort": "09060010",
+     "heim": "DC LaBamba Bad Windsheim III",
+     "gast": "DC Tschambolaia IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "13.02.2027",
+     "zeit": "19:00",
+     "ort": "09060490",
+     "heim": "Dartverein Erlangen e.V. IV",
+     "gast": "Kangaroots V",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "26.02.2027",
+     "zeit": "20:00",
+     "ort": "09060010",
+     "heim": "DC LaBamba Bad Windsheim III",
+     "gast": "SV Viktoria Darts Weigenheim",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "27.02.2027",
+     "zeit": "19:00",
+     "ort": "09060490",
+     "heim": "Dartverein Erlangen e.V. IV",
+     "gast": "DartKnights Dietenhofen",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "05.03.2027",
+     "zeit": "20:00",
+     "ort": "09060640",
+     "heim": "DartKnights Dietenhofen",
+     "gast": "DC Tschambolaia IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "06.03.2027",
+     "zeit": "19:00",
+     "ort": "09060490",
+     "heim": "Dartverein Erlangen e.V. IV",
+     "gast": "DC Franken-Power IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "07.03.2027",
+     "zeit": "13:00",
+     "ort": "09060330",
+     "heim": "Kangaroots V",
+     "gast": "TSV Kornburg DartKnights II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "19.03.2027",
+     "zeit": "19:00",
+     "ort": "09060740",
+     "heim": "Blue Bulls Ellingen",
+     "gast": "DC Tschambolaia IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "20.03.2027",
+     "zeit": "19:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights II",
+     "gast": "DC LaBamba Bad Windsheim III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "02.04.2027",
+     "zeit": "20:00",
+     "ort": "09060200",
+     "heim": "DC Tschambolaia IV",
+     "gast": "Kangaroots V",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "03.04.2027",
+     "zeit": "19:00",
+     "ort": "09060490",
+     "heim": "Dartverein Erlangen e.V. IV",
+     "gast": "DC LaBamba Bad Windsheim III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "16.04.2027",
+     "zeit": "19:00",
+     "ort": "09060740",
+     "heim": "Blue Bulls Ellingen",
+     "gast": "Dartverein Erlangen e.V. IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "17.04.2027",
+     "zeit": "19:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights II",
+     "gast": "DC Franken-Power IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "30.04.2027",
+     "zeit": "20:00",
+     "ort": "09060010",
+     "heim": "DC LaBamba Bad Windsheim III",
+     "gast": "DC Franken-Power IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "01.05.2027",
+     "zeit": "19:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights II",
+     "gast": "DartKnights Dietenhofen",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "02.05.2027",
+     "zeit": "13:00",
+     "ort": "09060330",
+     "heim": "Kangaroots V",
+     "gast": "Blue Bulls Ellingen",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "14.05.2027",
+     "zeit": "19:00",
+     "ort": "09060740",
+     "heim": "Blue Bulls Ellingen",
+     "gast": "TSV Kornburg DartKnights II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "16.05.2027",
+     "zeit": "13:00",
+     "ort": "09060330",
+     "heim": "Kangaroots V",
+     "gast": "DC LaBamba Bad Windsheim III",
+     "ergebnis": ""
+    }
+   ],
+   "teamtable": "1532600",
+   "teamid": "1224038",
+   "ical": "https://bdv-dart.liga.nu/cgi-bin/WebObjects/nuLigaDARTDE.woa/wa/getTeamMeetingsWebcal?teamid=1224038&token=fRvlPNWzsLw=",
+   "webcal": "webcal://bdv-dart.liga.nu/cgi-bin/WebObjects/nuLigaDARTDE.woa/wa/getTeamMeetingsWebcal?teamid=1224038&token=fRvlPNWzsLw=",
+   "halle": "Sportheim TSV Kornburg (09060440)",
+   "spieler": [
+    {
+     "rang": "2.4",
+     "name": "Wendler, Sebastian",
+     "einsaetze": "0",
+     "bilanz": ""
+    },
+    {
+     "rang": "2.1",
+     "name": "Reinke, Sebastian",
+     "einsaetze": "1",
+     "bilanz": "1:2"
+    },
+    {
+     "rang": "3.6",
+     "name": "Naumann, Rico",
+     "einsaetze": "1",
+     "bilanz": "0:1"
+    },
+    {
+     "rang": "2.6",
+     "name": "Sowa, Martin",
+     "einsaetze": "1",
+     "bilanz": "2:1"
+    },
+    {
+     "rang": "4.6",
+     "name": "Regler, Sebastian",
+     "einsaetze": "1",
+     "bilanz": "0:2"
+    },
+    {
+     "rang": "2.5",
+     "name": "Hübner, Noah",
+     "einsaetze": "1",
+     "bilanz": "1:2"
+    },
+    {
+     "rang": "2.3",
+     "name": "Nestler, David",
+     "einsaetze": "0",
+     "bilanz": ""
+    },
+    {
+     "rang": "2.2",
+     "name": "Ullsperger, Michael",
+     "einsaetze": "0",
+     "bilanz": ""
+    }
+   ],
+   "termine": [
+    {
+     "tag": "Sat",
+     "datum": "19.09.2026",
+     "zeit": "20:00",
+     "ort": "09060350",
+     "heim": "DC Franken-Power IV",
+     "gast": "TSV Kornburg DartKnights II",
+     "ergebnis": "11:5"
+    },
+    {
+     "tag": "Sat",
+     "datum": "17.10.2026",
+     "zeit": "19:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights II",
+     "gast": "DC Tschambolaia IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "23.10.2026",
+     "zeit": "20:00",
+     "ort": "09060010",
+     "heim": "DC LaBamba Bad Windsheim III",
+     "gast": "TSV Kornburg DartKnights II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "07.11.2026",
+     "zeit": "19:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights II",
+     "gast": "Blue Bulls Ellingen",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "27.11.2026",
+     "zeit": "20:00",
+     "ort": "09060430",
+     "heim": "SV Viktoria Darts Weigenheim",
+     "gast": "TSV Kornburg DartKnights II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "05.12.2026",
+     "zeit": "19:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights II",
+     "gast": "Dartverein Erlangen e.V. IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "11.12.2026",
+     "zeit": "20:00",
+     "ort": "09060640",
+     "heim": "DartKnights Dietenhofen",
+     "gast": "TSV Kornburg DartKnights II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "09.01.2027",
+     "zeit": "19:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights II",
+     "gast": "Kangaroots V",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "30.01.2027",
+     "zeit": "19:00",
+     "ort": "09060490",
+     "heim": "Dartverein Erlangen e.V. IV",
+     "gast": "TSV Kornburg DartKnights II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "26.02.2027",
+     "zeit": "20:00",
+     "ort": "09060200",
+     "heim": "DC Tschambolaia IV",
+     "gast": "TSV Kornburg DartKnights II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "07.03.2027",
+     "zeit": "13:00",
+     "ort": "09060330",
+     "heim": "Kangaroots V",
+     "gast": "TSV Kornburg DartKnights II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "20.03.2027",
+     "zeit": "19:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights II",
+     "gast": "DC LaBamba Bad Windsheim III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "03.04.2027",
+     "zeit": "19:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights II",
+     "gast": "SV Viktoria Darts Weigenheim",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "17.04.2027",
+     "zeit": "19:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights II",
+     "gast": "DC Franken-Power IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "01.05.2027",
+     "zeit": "19:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights II",
+     "gast": "DartKnights Dietenhofen",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "14.05.2027",
+     "zeit": "19:00",
+     "ort": "09060740",
+     "heim": "Blue Bulls Ellingen",
+     "gast": "TSV Kornburg DartKnights II",
+     "ergebnis": ""
+    }
+   ],
+   "ics_datei": "team2.ics",
+   "rang": 6,
+   "punkte": "0:2"
+  },
+  {
+   "team": "TSV Kornburg DartKnights III",
+   "league": "4. Bezirksliga D",
+   "championship": "MFr+2026%2F27",
+   "group": "211780",
+   "kurz": "3. Mannschaft",
+   "tabelle": {
+    "headers": [
+     "Rang",
+     "Team",
+     "S",
+     "U",
+     "N",
+     "Spiele",
+     "+/-",
+     "Legs",
+     "Punkte"
+    ],
+    "rows": [
+     {
+      "rang": 1,
+      "team": "Kangaroots VII",
+      "teamtable": "1532721",
+      "su_n": [
+       "2",
+       "1",
+       "0"
+      ],
+      "spiele": "23:13",
+      "diff": "+10",
+      "legs": "76:57",
+      "punkte": "5:1"
+     },
+     {
+      "rang": 2,
+      "team": "ASV Fürth e.V.",
+      "teamtable": "1532667",
+      "su_n": [
+       "2",
+       "0",
+       "0"
+      ],
+      "spiele": "16:8",
+      "diff": "+8",
+      "legs": "55:39",
+      "punkte": "4:0"
+     },
+     {
+      "rang": 3,
+      "team": "DC LaBamba Bad Windsheim V",
+      "teamtable": "1532695",
+      "su_n": [
+       "1",
+       "1",
+       "0"
+      ],
+      "spiele": "16:8",
+      "diff": "+8",
+      "legs": "56:28",
+      "punkte": "3:1"
+     },
+     {
+      "rang": 4,
+      "team": "SVU Darter",
+      "teamtable": "1532660",
+      "su_n": [
+       "1",
+       "0",
+       "0"
+      ],
+      "spiele": "7:5",
+      "diff": "+2",
+      "legs": "25:23",
+      "punkte": "2:0"
+     },
+     {
+      "rang": 5,
+      "team": "DC Torpedo Erlangen III",
+      "teamtable": "1532685",
+      "su_n": [
+       "1",
+       "0",
+       "1"
+      ],
+      "spiele": "11:13",
+      "diff": "-2",
+      "legs": "45:49",
+      "punkte": "2:2"
+     },
+     {
+      "rang": 6,
+      "team": "DC Ansbach II",
+      "teamtable": "1532676",
+      "su_n": [
+       "1",
+       "0",
+       "2"
+      ],
+      "spiele": "20:16",
+      "diff": "+4",
+      "legs": "77:62",
+      "punkte": "2:4"
+     },
+     {
+      "rang": 7,
+      "team": "Heinrich VIII III",
+      "teamtable": "1532732",
+      "su_n": [
+       "0",
+       "0",
+       "1"
+      ],
+      "spiele": "3:9",
+      "diff": "-6",
+      "legs": "16:31",
+      "punkte": "0:2"
+     },
+     {
+      "rang": 8,
+      "team": "DC Flying Eagles II",
+      "teamtable": "1532712",
+      "su_n": [
+       "0",
+       "0",
+       "2"
+      ],
+      "spiele": "7:17",
+      "diff": "-10",
+      "legs": "32:58",
+      "punkte": "0:4"
+     },
+     {
+      "rang": 9,
+      "team": "TSV Kornburg DartKnights III",
+      "teamtable": "1532703",
+      "su_n": [
+       "0",
+       "0",
+       "2"
+      ],
+      "spiele": "5:19",
+      "diff": "-14",
+      "legs": "29:64",
+      "punkte": "0:4"
+     }
+    ]
+   },
+   "spielplan": [
+    {
+     "tag": "Fri",
+     "datum": "18.09.2026",
+     "zeit": "19:00",
+     "ort": "09060190",
+     "heim": "DC Torpedo Erlangen III",
+     "gast": "Kangaroots VII",
+     "ergebnis": "2:10"
+    },
+    {
+     "tag": "Sat",
+     "datum": "19.09.2026",
+     "zeit": "19:00",
+     "ort": "09060820",
+     "heim": "ASV Fürth e.V.",
+     "gast": "DC Ansbach II",
+     "ergebnis": "8:4"
+    },
+    {
+     "tag": "Fri",
+     "datum": "25.09.2026",
+     "zeit": "20:00",
+     "ort": "09060770",
+     "heim": "DC Ansbach II",
+     "gast": "TSV Kornburg DartKnights III",
+     "ergebnis": "11:1"
+    },
+    {
+     "tag": "Sat",
+     "datum": "26.09.2026",
+     "zeit": "14:00",
+     "ort": "09061150",
+     "heim": "DC Flying Eagles II",
+     "gast": "SVU Darter",
+     "ergebnis": "5:7"
+    },
+    {
+     "tag": "Sun",
+     "datum": "27.09.2026",
+     "zeit": "17:00",
+     "ort": "09060530",
+     "heim": "Heinrich VIII III",
+     "gast": "DC Torpedo Erlangen III",
+     "ergebnis": "3:9"
+    },
+    {
+     "tag": "Sat",
+     "datum": "03.10.2026",
+     "zeit": "16:00",
+     "ort": "09060330",
+     "heim": "Kangaroots VII",
+     "gast": "DC Ansbach II",
+     "ergebnis": "7:5"
+    },
+    {
+     "tag": "Sat",
+     "datum": "10.10.2026",
+     "zeit": "20:00",
+     "ort": "09060760",
+     "heim": "SVU Darter",
+     "gast": "Heinrich VIII III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "16.10.2026",
+     "zeit": "20:00",
+     "ort": "09060770",
+     "heim": "DC Ansbach II",
+     "gast": "Heinrich VIII III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "17.10.2026",
+     "zeit": "20:00",
+     "ort": "09060760",
+     "heim": "SVU Darter",
+     "gast": "DC Torpedo Erlangen III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "24.10.2026",
+     "zeit": "19:00",
+     "ort": "09061150",
+     "heim": "DC Flying Eagles II",
+     "gast": "DC Torpedo Erlangen III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "25.10.2026",
+     "zeit": "17:00",
+     "ort": "09060530",
+     "heim": "Heinrich VIII III",
+     "gast": "DC LaBamba Bad Windsheim V",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "30.10.2026",
+     "zeit": "20:00",
+     "ort": "09060330",
+     "heim": "Kangaroots VII",
+     "gast": "SVU Darter",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "06.11.2026",
+     "zeit": "20:00",
+     "ort": "09060770",
+     "heim": "DC Ansbach II",
+     "gast": "SVU Darter",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "07.11.2026",
+     "zeit": "16:00",
+     "ort": "09060330",
+     "heim": "Kangaroots VII",
+     "gast": "Heinrich VIII III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "27.11.2026",
+     "zeit": "20:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights III",
+     "gast": "DC Flying Eagles II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "28.11.2026",
+     "zeit": "18:00",
+     "ort": "09060190",
+     "heim": "DC Torpedo Erlangen III",
+     "gast": "DC LaBamba Bad Windsheim V",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "05.12.2026",
+     "zeit": "19:00",
+     "ort": "09060820",
+     "heim": "ASV Fürth e.V.",
+     "gast": "DC Torpedo Erlangen III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "06.12.2026",
+     "zeit": "17:00",
+     "ort": "09060530",
+     "heim": "Heinrich VIII III",
+     "gast": "TSV Kornburg DartKnights III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "11.12.2026",
+     "zeit": "20:00",
+     "ort": "09060010",
+     "heim": "DC LaBamba Bad Windsheim V",
+     "gast": "DC Ansbach II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "12.12.2026",
+     "zeit": "16:00",
+     "ort": "09060330",
+     "heim": "Kangaroots VII",
+     "gast": "ASV Fürth e.V.",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "13.12.2026",
+     "zeit": "17:00",
+     "ort": "09060530",
+     "heim": "Heinrich VIII III",
+     "gast": "DC Flying Eagles II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "08.01.2027",
+     "zeit": "20:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights III",
+     "gast": "SVU Darter",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "09.01.2027",
+     "zeit": "16:00",
+     "ort": "09060330",
+     "heim": "Kangaroots VII",
+     "gast": "DC Flying Eagles II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "29.01.2027",
+     "zeit": "20:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights III",
+     "gast": "DC Ansbach II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "30.01.2027",
+     "zeit": "16:00",
+     "ort": "09060330",
+     "heim": "Kangaroots VII",
+     "gast": "DC LaBamba Bad Windsheim V",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "12.02.2027",
+     "zeit": "20:00",
+     "ort": "09060770",
+     "heim": "DC Ansbach II",
+     "gast": "DC Torpedo Erlangen III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "13.02.2027",
+     "zeit": "19:00",
+     "ort": "09061150",
+     "heim": "DC Flying Eagles II",
+     "gast": "Kangaroots VII",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "14.02.2027",
+     "zeit": "17:00",
+     "ort": "09060530",
+     "heim": "Heinrich VIII III",
+     "gast": "ASV Fürth e.V.",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "27.02.2027",
+     "zeit": "16:00",
+     "ort": "09060330",
+     "heim": "Kangaroots VII",
+     "gast": "TSV Kornburg DartKnights III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "28.02.2027",
+     "zeit": "17:00",
+     "ort": "09060530",
+     "heim": "Heinrich VIII III",
+     "gast": "DC Ansbach II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "05.03.2027",
+     "zeit": "20:00",
+     "ort": "09060770",
+     "heim": "DC Ansbach II",
+     "gast": "DC Flying Eagles II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "06.03.2027",
+     "zeit": "18:00",
+     "ort": "09060190",
+     "heim": "DC Torpedo Erlangen III",
+     "gast": "ASV Fürth e.V.",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "19.03.2027",
+     "zeit": "20:00",
+     "ort": "09060010",
+     "heim": "DC LaBamba Bad Windsheim V",
+     "gast": "TSV Kornburg DartKnights III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "20.03.2027",
+     "zeit": "19:00",
+     "ort": "09060820",
+     "heim": "ASV Fürth e.V.",
+     "gast": "DC Flying Eagles II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "21.03.2027",
+     "zeit": "17:00",
+     "ort": "09060530",
+     "heim": "Heinrich VIII III",
+     "gast": "Kangaroots VII",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "02.04.2027",
+     "zeit": "20:00",
+     "ort": "09060770",
+     "heim": "DC Ansbach II",
+     "gast": "Kangaroots VII",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "03.04.2027",
+     "zeit": "19:00",
+     "ort": "09060820",
+     "heim": "ASV Fürth e.V.",
+     "gast": "SVU Darter",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "16.04.2027",
+     "zeit": "20:00",
+     "ort": "09060770",
+     "heim": "DC Ansbach II",
+     "gast": "ASV Fürth e.V.",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "17.04.2027",
+     "zeit": "16:00",
+     "ort": "09060330",
+     "heim": "Kangaroots VII",
+     "gast": "DC Torpedo Erlangen III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "18.04.2027",
+     "zeit": "17:00",
+     "ort": "09060530",
+     "heim": "Heinrich VIII III",
+     "gast": "SVU Darter",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "30.04.2027",
+     "zeit": "20:00",
+     "ort": "09060770",
+     "heim": "DC Ansbach II",
+     "gast": "DC LaBamba Bad Windsheim V",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "01.05.2027",
+     "zeit": "18:00",
+     "ort": "09060190",
+     "heim": "DC Torpedo Erlangen III",
+     "gast": "TSV Kornburg DartKnights III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "14.05.2027",
+     "zeit": "20:00",
+     "ort": "09060010",
+     "heim": "DC LaBamba Bad Windsheim V",
+     "gast": "Heinrich VIII III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "15.05.2027",
+     "zeit": "18:00",
+     "ort": "09060190",
+     "heim": "DC Torpedo Erlangen III",
+     "gast": "DC Flying Eagles II",
+     "ergebnis": ""
+    }
+   ],
+   "teamtable": "1532703",
+   "teamid": "1224044",
+   "ical": "https://bdv-dart.liga.nu/cgi-bin/WebObjects/nuLigaDARTDE.woa/wa/getTeamMeetingsWebcal?teamid=1224044&token=ayQEYzqjptc=",
+   "webcal": "webcal://bdv-dart.liga.nu/cgi-bin/WebObjects/nuLigaDARTDE.woa/wa/getTeamMeetingsWebcal?teamid=1224044&token=ayQEYzqjptc=",
+   "halle": "Sportheim TSV Kornburg (09060440)",
+   "spieler": [
+    {
+     "rang": "3.1",
+     "name": "Stellwag, Andreas",
+     "einsaetze": "2",
+     "bilanz": "1:1"
+    },
+    {
+     "rang": "3.2",
+     "name": "Stellwag, Jasmin",
+     "einsaetze": "2",
+     "bilanz": "1:1"
+    },
+    {
+     "rang": "3.8",
+     "name": "Helmschmid, Marco",
+     "einsaetze": "2",
+     "bilanz": "0:3"
+    },
+    {
+     "rang": "3.6",
+     "name": "Naumann, Rico",
+     "einsaetze": "0",
+     "bilanz": ""
+    },
+    {
+     "rang": "3.7",
+     "name": "Berndt, Denny (keine JFG)",
+     "einsaetze": "1",
+     "bilanz": "0:1"
+    },
+    {
+     "rang": "3.4",
+     "name": "Berndt, Daniela",
+     "einsaetze": "2",
+     "bilanz": "0:2"
+    },
+    {
+     "rang": "3.5",
+     "name": "Berndt, Daniel",
+     "einsaetze": "2",
+     "bilanz": "1:3"
+    },
+    {
+     "rang": "3.3",
+     "name": "Stegmann, René",
+     "einsaetze": "1",
+     "bilanz": "0:2"
+    }
+   ],
+   "termine": [
+    {
+     "tag": "Fri",
+     "datum": "25.09.2026",
+     "zeit": "20:00",
+     "ort": "09060770",
+     "heim": "DC Ansbach II",
+     "gast": "TSV Kornburg DartKnights III",
+     "ergebnis": "11:1"
+    },
+    {
+     "tag": "Sat",
+     "datum": "03.10.2026",
+     "zeit": "19:00",
+     "ort": "09060820",
+     "heim": "ASV Fürth e.V.",
+     "gast": "TSV Kornburg DartKnights III",
+     "ergebnis": "8:4"
+    },
+    {
+     "tag": "Fri",
+     "datum": "16.10.2026",
+     "zeit": "20:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights III",
+     "gast": "Kangaroots VII",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "06.11.2026",
+     "zeit": "20:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights III",
+     "gast": "DC LaBamba Bad Windsheim V",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "27.11.2026",
+     "zeit": "20:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights III",
+     "gast": "DC Flying Eagles II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "06.12.2026",
+     "zeit": "17:00",
+     "ort": "09060530",
+     "heim": "Heinrich VIII III",
+     "gast": "TSV Kornburg DartKnights III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "11.12.2026",
+     "zeit": "20:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights III",
+     "gast": "DC Torpedo Erlangen III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "08.01.2027",
+     "zeit": "20:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights III",
+     "gast": "SVU Darter",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "29.01.2027",
+     "zeit": "20:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights III",
+     "gast": "DC Ansbach II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "13.02.2027",
+     "zeit": "20:00",
+     "ort": "09060760",
+     "heim": "SVU Darter",
+     "gast": "TSV Kornburg DartKnights III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "27.02.2027",
+     "zeit": "16:00",
+     "ort": "09060330",
+     "heim": "Kangaroots VII",
+     "gast": "TSV Kornburg DartKnights III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "05.03.2027",
+     "zeit": "20:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights III",
+     "gast": "Heinrich VIII III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "19.03.2027",
+     "zeit": "20:00",
+     "ort": "09060010",
+     "heim": "DC LaBamba Bad Windsheim V",
+     "gast": "TSV Kornburg DartKnights III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "03.04.2027",
+     "zeit": "19:00",
+     "ort": "09061150",
+     "heim": "DC Flying Eagles II",
+     "gast": "TSV Kornburg DartKnights III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "01.05.2027",
+     "zeit": "18:00",
+     "ort": "09060190",
+     "heim": "DC Torpedo Erlangen III",
+     "gast": "TSV Kornburg DartKnights III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "14.05.2027",
+     "zeit": "20:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights III",
+     "gast": "ASV Fürth e.V.",
+     "ergebnis": ""
+    }
+   ],
+   "ics_datei": "team3.ics",
+   "rang": 9,
+   "punkte": "0:4"
+  },
+  {
+   "team": "TSV Kornburg DartKnights IV",
+   "league": "5. Bezirksliga K",
+   "championship": "MFr+2026%2F27",
+   "group": "211854",
+   "kurz": "4. Mannschaft",
+   "tabelle": {
+    "headers": [
+     "Rang",
+     "Team",
+     "S",
+     "U",
+     "N",
+     "Spiele",
+     "+/-",
+     "Legs",
+     "Punkte"
+    ],
+    "rows": [
+     {
+      "rang": 1,
+      "team": "DC Tschambolaia VIII",
+      "teamtable": "1532987",
+      "su_n": [
+       "2",
+       "0",
+       "0"
+      ],
+      "spiele": "17:7",
+      "diff": "+10",
+      "legs": "60:30",
+      "punkte": "4:0"
+     },
+     {
+      "rang": 2,
+      "team": "Darts Jäger Weißenburg II",
+      "teamtable": "1532931",
+      "su_n": [
+       "1",
+       "1",
+       "0"
+      ],
+      "spiele": "15:9",
+      "diff": "+6",
+      "legs": "52:40",
+      "punkte": "3:1"
+     },
+     {
+      "rang": 3,
+      "team": "TSV Kornburg DartKnights IV",
+      "teamtable": "1532877",
+      "su_n": [
+       "1",
+       "1",
+       "0"
+      ],
+      "spiele": "13:11",
+      "diff": "+2",
+      "legs": "51:49",
+      "punkte": "3:1"
+     },
+     {
+      "rang": 4,
+      "team": "BV Bergen III",
+      "teamtable": "1532825",
+      "su_n": [
+       "1",
+       "0",
+       "0"
+      ],
+      "spiele": "10:2",
+      "diff": "+8",
+      "legs": "33:11",
+      "punkte": "2:0"
+     },
+     {
+      "rang": 5,
+      "team": "Hohenzollern Darter II",
+      "teamtable": "1532769",
+      "su_n": [
+       "1",
+       "0",
+       "1"
+      ],
+      "spiele": "14:10",
+      "diff": "+4",
+      "legs": "53:47",
+      "punkte": "2:2"
+     },
+     {
+      "rang": 6,
+      "team": "Kangaroots IX",
+      "teamtable": "1532851",
+      "su_n": [
+       "0",
+       "1",
+       "0"
+      ],
+      "spiele": "6:6",
+      "diff": "0",
+      "legs": "23:24",
+      "punkte": "1:1"
+     },
+     {
+      "rang": 7,
+      "team": "Green Arrows II",
+      "teamtable": "1532797",
+      "su_n": [
+       "0",
+       "1",
+       "1"
+      ],
+      "spiele": "10:14",
+      "diff": "-4",
+      "legs": "43:52",
+      "punkte": "1:3"
+     },
+     {
+      "rang": 8,
+      "team": "Stadeln Steelers IV",
+      "teamtable": "1532905",
+      "su_n": [
+       "0",
+       "0",
+       "2"
+      ],
+      "spiele": "6:18",
+      "diff": "-12",
+      "legs": "37:58",
+      "punkte": "0:4"
+     },
+     {
+      "rang": 9,
+      "team": "Scorpions TS Herzogenaurach",
+      "teamtable": "1532958",
+      "su_n": [
+       "0",
+       "0",
+       "2"
+      ],
+      "spiele": "5:19",
+      "diff": "-14",
+      "legs": "24:65",
+      "punkte": "0:4"
+     }
+    ]
+   },
+   "spielplan": [
+    {
+     "tag": "Sat",
+     "datum": "19.09.2026",
+     "zeit": "20:00",
+     "ort": "09060200",
+     "heim": "DC Tschambolaia VIII",
+     "gast": "Green Arrows II",
+     "ergebnis": "8:4"
+    },
+    {
+     "tag": "Sun",
+     "datum": "20.09.2026",
+     "zeit": "15:00",
+     "ort": "09060620",
+     "heim": "Stadeln Steelers IV",
+     "gast": "Darts Jäger Weißenburg II",
+     "ergebnis": "3:9"
+    },
+    {
+     "tag": "Sat",
+     "datum": "26.09.2026",
+     "zeit": "18:00",
+     "ort": "09061010",
+     "heim": "Scorpions TS Herzogenaurach",
+     "gast": "DC Tschambolaia VIII",
+     "ergebnis": "3:9"
+    },
+    {
+     "tag": "Sun",
+     "datum": "27.09.2026",
+     "zeit": "15:00",
+     "ort": "09060620",
+     "heim": "Stadeln Steelers IV",
+     "gast": "Hohenzollern Darter II",
+     "ergebnis": "3:9"
+    },
+    {
+     "tag": "Sat",
+     "datum": "03.10.2026",
+     "zeit": "19:00",
+     "ort": "09061010",
+     "heim": "Scorpions TS Herzogenaurach",
+     "gast": "BV Bergen III",
+     "ergebnis": "2:10"
+    },
+    {
+     "tag": "Fri",
+     "datum": "09.10.2026",
+     "zeit": "19:00",
+     "ort": "09060830",
+     "heim": "Green Arrows II",
+     "gast": "Stadeln Steelers IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "17.10.2026",
+     "zeit": "18:00",
+     "ort": "09061010",
+     "heim": "Scorpions TS Herzogenaurach",
+     "gast": "TSV Kornburg DartKnights IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "24.10.2026",
+     "zeit": "18:30",
+     "ort": "09060680",
+     "heim": "Darts Jäger Weißenburg II",
+     "gast": "Green Arrows II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "25.10.2026",
+     "zeit": "16:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights IV",
+     "gast": "Stadeln Steelers IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "06.11.2026",
+     "zeit": "20:00",
+     "ort": "09060830",
+     "heim": "Green Arrows II",
+     "gast": "Hohenzollern Darter II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "07.11.2026",
+     "zeit": "18:30",
+     "ort": "09060680",
+     "heim": "Darts Jäger Weißenburg II",
+     "gast": "Scorpions TS Herzogenaurach",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "08.11.2026",
+     "zeit": "15:00",
+     "ort": "09060620",
+     "heim": "Stadeln Steelers IV",
+     "gast": "BV Bergen III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "14.11.2026",
+     "zeit": "20:00",
+     "ort": "09060330",
+     "heim": "Kangaroots IX",
+     "gast": "DC Tschambolaia VIII",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "27.11.2026",
+     "zeit": "20:00",
+     "ort": "09060830",
+     "heim": "Green Arrows II",
+     "gast": "BV Bergen III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "28.11.2026",
+     "zeit": "20:00",
+     "ort": "09060200",
+     "heim": "DC Tschambolaia VIII",
+     "gast": "Darts Jäger Weißenburg II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "29.11.2026",
+     "zeit": "15:00",
+     "ort": "09060620",
+     "heim": "Stadeln Steelers IV",
+     "gast": "Kangaroots IX",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "04.12.2026",
+     "zeit": "20:00",
+     "ort": "09060830",
+     "heim": "Green Arrows II",
+     "gast": "Scorpions TS Herzogenaurach",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "05.12.2026",
+     "zeit": "18:30",
+     "ort": "09060680",
+     "heim": "Darts Jäger Weißenburg II",
+     "gast": "TSV Kornburg DartKnights IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "12.12.2026",
+     "zeit": "19:00",
+     "ort": "09060140",
+     "heim": "BV Bergen III",
+     "gast": "TSV Kornburg DartKnights IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "18.12.2026",
+     "zeit": "20:00",
+     "ort": "09060200",
+     "heim": "DC Tschambolaia VIII",
+     "gast": "Stadeln Steelers IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "09.01.2027",
+     "zeit": "18:00",
+     "ort": "09061010",
+     "heim": "Scorpions TS Herzogenaurach",
+     "gast": "Stadeln Steelers IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "30.01.2027",
+     "zeit": "18:00",
+     "ort": "09061010",
+     "heim": "Scorpions TS Herzogenaurach",
+     "gast": "Hohenzollern Darter II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "13.02.2027",
+     "zeit": "18:00",
+     "ort": "09061010",
+     "heim": "Scorpions TS Herzogenaurach",
+     "gast": "Kangaroots IX",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "14.02.2027",
+     "zeit": "15:00",
+     "ort": "09060620",
+     "heim": "Stadeln Steelers IV",
+     "gast": "DC Tschambolaia VIII",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "27.02.2027",
+     "zeit": "18:00",
+     "ort": "09061010",
+     "heim": "Scorpions TS Herzogenaurach",
+     "gast": "Green Arrows II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "28.02.2027",
+     "zeit": "16:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights IV",
+     "gast": "Darts Jäger Weißenburg II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "05.03.2027",
+     "zeit": "20:00",
+     "ort": "09060830",
+     "heim": "Green Arrows II",
+     "gast": "Darts Jäger Weißenburg II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "06.03.2027",
+     "zeit": "20:00",
+     "ort": "09060200",
+     "heim": "DC Tschambolaia VIII",
+     "gast": "Kangaroots IX",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "07.03.2027",
+     "zeit": "15:00",
+     "ort": "09060620",
+     "heim": "Stadeln Steelers IV",
+     "gast": "TSV Kornburg DartKnights IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "19.03.2027",
+     "zeit": "20:00",
+     "ort": "09060830",
+     "heim": "Green Arrows II",
+     "gast": "Kangaroots IX",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "20.03.2027",
+     "zeit": "19:00",
+     "ort": "09060140",
+     "heim": "BV Bergen III",
+     "gast": "Darts Jäger Weißenburg II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "21.03.2027",
+     "zeit": "15:00",
+     "ort": "09060620",
+     "heim": "Stadeln Steelers IV",
+     "gast": "Scorpions TS Herzogenaurach",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "03.04.2027",
+     "zeit": "18:00",
+     "ort": "09061010",
+     "heim": "Scorpions TS Herzogenaurach",
+     "gast": "Darts Jäger Weißenburg II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "04.04.2027",
+     "zeit": "16:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights IV",
+     "gast": "Kangaroots IX",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "17.04.2027",
+     "zeit": "20:00",
+     "ort": "09060200",
+     "heim": "DC Tschambolaia VIII",
+     "gast": "BV Bergen III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "18.04.2027",
+     "zeit": "15:00",
+     "ort": "09060620",
+     "heim": "Stadeln Steelers IV",
+     "gast": "Green Arrows II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "01.05.2027",
+     "zeit": "18:30",
+     "ort": "09060680",
+     "heim": "Darts Jäger Weißenburg II",
+     "gast": "Kangaroots IX",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "14.05.2027",
+     "zeit": "20:00",
+     "ort": "09060830",
+     "heim": "Green Arrows II",
+     "gast": "DC Tschambolaia VIII",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "15.05.2027",
+     "zeit": "18:30",
+     "ort": "09060680",
+     "heim": "Darts Jäger Weißenburg II",
+     "gast": "Stadeln Steelers IV",
+     "ergebnis": ""
+    }
+   ],
+   "teamtable": "1532877",
+   "teamid": "1224147",
+   "ical": "https://bdv-dart.liga.nu/cgi-bin/WebObjects/nuLigaDARTDE.woa/wa/getTeamMeetingsWebcal?teamid=1224147&token=LfbxEziVOP0=",
+   "webcal": "webcal://bdv-dart.liga.nu/cgi-bin/WebObjects/nuLigaDARTDE.woa/wa/getTeamMeetingsWebcal?teamid=1224147&token=LfbxEziVOP0=",
+   "halle": "Sportheim TSV Kornburg (09060440)",
+   "spieler": [
+    {
+     "rang": "4.5",
+     "name": "Enzenberger, Roland",
+     "einsaetze": "0",
+     "bilanz": ""
+    },
+    {
+     "rang": "4.1",
+     "name": "Kasper, Thorsten",
+     "einsaetze": "2",
+     "bilanz": "4:0"
+    },
+    {
+     "rang": "4.3",
+     "name": "Hallermeier, Dominik",
+     "einsaetze": "2",
+     "bilanz": "2:2"
+    },
+    {
+     "rang": "4.6",
+     "name": "Regler, Sebastian",
+     "einsaetze": "2",
+     "bilanz": "2:2"
+    },
+    {
+     "rang": "4.2",
+     "name": "Hennig, Lucas",
+     "einsaetze": "0",
+     "bilanz": ""
+    },
+    {
+     "rang": "4.4",
+     "name": "Mikutta, Florian",
+     "einsaetze": "2",
+     "bilanz": "1:3"
+    }
+   ],
+   "termine": [
+    {
+     "tag": "Sun",
+     "datum": "20.09.2026",
+     "zeit": "16:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights IV",
+     "gast": "Hohenzollern Darter II",
+     "ergebnis": "7:5"
+    },
+    {
+     "tag": "Sun",
+     "datum": "27.09.2026",
+     "zeit": "16:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights IV",
+     "gast": "Green Arrows II",
+     "ergebnis": "6:6"
+    },
+    {
+     "tag": "Sat",
+     "datum": "17.10.2026",
+     "zeit": "18:00",
+     "ort": "09061010",
+     "heim": "Scorpions TS Herzogenaurach",
+     "gast": "TSV Kornburg DartKnights IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "25.10.2026",
+     "zeit": "16:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights IV",
+     "gast": "Stadeln Steelers IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "07.11.2026",
+     "zeit": "20:00",
+     "ort": "09060330",
+     "heim": "Kangaroots IX",
+     "gast": "TSV Kornburg DartKnights IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "05.12.2026",
+     "zeit": "18:30",
+     "ort": "09060680",
+     "heim": "Darts Jäger Weißenburg II",
+     "gast": "TSV Kornburg DartKnights IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "12.12.2026",
+     "zeit": "19:00",
+     "ort": "09060140",
+     "heim": "BV Bergen III",
+     "gast": "TSV Kornburg DartKnights IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "09.01.2027",
+     "zeit": "20:00",
+     "ort": "09060200",
+     "heim": "DC Tschambolaia VIII",
+     "gast": "TSV Kornburg DartKnights IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "14.02.2027",
+     "zeit": "16:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights IV",
+     "gast": "BV Bergen III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "28.02.2027",
+     "zeit": "16:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights IV",
+     "gast": "Darts Jäger Weißenburg II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "07.03.2027",
+     "zeit": "15:00",
+     "ort": "09060620",
+     "heim": "Stadeln Steelers IV",
+     "gast": "TSV Kornburg DartKnights IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "21.03.2027",
+     "zeit": "16:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights IV",
+     "gast": "DC Tschambolaia VIII",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "04.04.2027",
+     "zeit": "16:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights IV",
+     "gast": "Kangaroots IX",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "18.04.2027",
+     "zeit": "16:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights IV",
+     "gast": "Scorpions TS Herzogenaurach",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "01.05.2027",
+     "zeit": "20:00",
+     "ort": "09060830",
+     "heim": "Green Arrows II",
+     "gast": "TSV Kornburg DartKnights IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "15.05.2027",
+     "zeit": "20:00",
+     "ort": "09060950",
+     "heim": "Hohenzollern Darter II",
+     "gast": "TSV Kornburg DartKnights IV",
+     "ergebnis": ""
+    }
+   ],
+   "ics_datei": "team4.ics",
+   "rang": 3,
+   "punkte": "3:1"
+  },
+  {
+   "team": "TSV Kornburg DartKnights V",
+   "league": "5. Bezirksliga I",
+   "championship": "MFr+2026%2F27",
+   "group": "211853",
+   "kurz": "5. Mannschaft",
+   "tabelle": {
+    "headers": [
+     "Rang",
+     "Team",
+     "S",
+     "U",
+     "N",
+     "Spiele",
+     "+/-",
+     "Legs",
+     "Punkte"
+    ],
+    "rows": [
+     {
+      "rang": 1,
+      "team": "Darts- und Peperonispießfreunde Wilhelmsdorf II",
+      "teamtable": "1532955",
+      "su_n": [
+       "2",
+       "0",
+       "0"
+      ],
+      "spiele": "19:5",
+      "diff": "+14",
+      "legs": "60:31",
+      "punkte": "4:0"
+     },
+     {
+      "rang": 2,
+      "team": "FCA Arrows II",
+      "teamtable": "1532875",
+      "su_n": [
+       "2",
+       "0",
+       "0"
+      ],
+      "spiele": "17:7",
+      "diff": "+10",
+      "legs": "56:27",
+      "punkte": "4:0"
+     },
+     {
+      "rang": 3,
+      "team": "Sittenbachdart II",
+      "teamtable": "1532822",
+      "su_n": [
+       "1",
+       "0",
+       "0"
+      ],
+      "spiele": "11:1",
+      "diff": "+10",
+      "legs": "35:16",
+      "punkte": "2:0"
+     },
+     {
+      "rang": 4,
+      "team": "DC Tschambolaia VI",
+      "teamtable": "1532766",
+      "su_n": [
+       "1",
+       "0",
+       "0"
+      ],
+      "spiele": "7:5",
+      "diff": "+2",
+      "legs": "25:18",
+      "punkte": "2:0"
+     },
+     {
+      "rang": 5,
+      "team": "Dartperados",
+      "teamtable": "1532984",
+      "su_n": [
+       "1",
+       "0",
+       "1"
+      ],
+      "spiele": "13:11",
+      "diff": "+2",
+      "legs": "45:40",
+      "punkte": "2:2"
+     },
+     {
+      "rang": 6,
+      "team": "TSV Schnelldorf III",
+      "teamtable": "1532903",
+      "su_n": [
+       "0",
+       "0",
+       "1"
+      ],
+      "spiele": "4:8",
+      "diff": "-4",
+      "legs": "16:28",
+      "punkte": "0:2"
+     },
+     {
+      "rang": 7,
+      "team": "Anarchy 05 IV",
+      "teamtable": "1532794",
+      "su_n": [
+       "0",
+       "0",
+       "1"
+      ],
+      "spiele": "2:10",
+      "diff": "-8",
+      "legs": "10:32",
+      "punkte": "0:2"
+     },
+     {
+      "rang": 8,
+      "team": "DC Ansbach IV",
+      "teamtable": "1532849",
+      "su_n": [
+       "0",
+       "0",
+       "2"
+      ],
+      "spiele": "8:16",
+      "diff": "-8",
+      "legs": "37:53",
+      "punkte": "0:4"
+     },
+     {
+      "rang": 9,
+      "team": "TSV Kornburg DartKnights V",
+      "teamtable": "1532930",
+      "su_n": [
+       "0",
+       "0",
+       "2"
+      ],
+      "spiele": "3:21",
+      "diff": "-18",
+      "legs": "28:67",
+      "punkte": "0:4"
+     }
+    ]
+   },
+   "spielplan": [
+    {
+     "tag": "Fri",
+     "datum": "18.09.2026",
+     "zeit": "20:00",
+     "ort": "09060100",
+     "heim": "Anarchy 05 IV",
+     "gast": "FCA Arrows II",
+     "ergebnis": "2:10"
+    },
+    {
+     "tag": "Sat",
+     "datum": "19.09.2026",
+     "zeit": "19:00",
+     "ort": "09061020",
+     "heim": "Darts- und Peperonispießfreunde Wilhelmsdorf II",
+     "gast": "TSV Kornburg DartKnights V",
+     "ergebnis": "10:2"
+    },
+    {
+     "tag": "Sun",
+     "datum": "20.09.2026",
+     "zeit": "16:00",
+     "ort": "09060810",
+     "heim": "Dartperados",
+     "gast": "TSV Schnelldorf III",
+     "ergebnis": "8:4"
+    },
+    {
+     "tag": "Fri",
+     "datum": "25.09.2026",
+     "zeit": "20:00",
+     "ort": "09060770",
+     "heim": "DC Ansbach IV",
+     "gast": "Darts- und Peperonispießfreunde Wilhelmsdorf II",
+     "ergebnis": "3:9"
+    },
+    {
+     "tag": "Sat",
+     "datum": "26.09.2026",
+     "zeit": "19:30",
+     "ort": "09060710",
+     "heim": "Sittenbachdart II",
+     "gast": "TSV Kornburg DartKnights V",
+     "ergebnis": "11:1"
+    },
+    {
+     "tag": "Sun",
+     "datum": "27.09.2026",
+     "zeit": "16:00",
+     "ort": "09060870",
+     "heim": "FCA Arrows II",
+     "gast": "Dartperados",
+     "ergebnis": "7:5"
+    },
+    {
+     "tag": "Fri",
+     "datum": "09.10.2026",
+     "zeit": "20:00",
+     "ort": "",
+     "heim": "Anarchy 05 IV",
+     "gast": "DC Tschambolaia VI",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "11.10.2026",
+     "zeit": "16:00",
+     "ort": "09060870",
+     "heim": "FCA Arrows II",
+     "gast": "DC Tschambolaia VI",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "16.10.2026",
+     "zeit": "20:00",
+     "ort": "09060770",
+     "heim": "DC Ansbach IV",
+     "gast": "FCA Arrows II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "17.10.2026",
+     "zeit": "19:30",
+     "ort": "09060710",
+     "heim": "Sittenbachdart II",
+     "gast": "Darts- und Peperonispießfreunde Wilhelmsdorf II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "18.10.2026",
+     "zeit": "16:00",
+     "ort": "09060810",
+     "heim": "Dartperados",
+     "gast": "TSV Kornburg DartKnights V",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "24.10.2026",
+     "zeit": "15:00",
+     "ort": "09060850",
+     "heim": "TSV Schnelldorf III",
+     "gast": "Darts- und Peperonispießfreunde Wilhelmsdorf II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "25.10.2026",
+     "zeit": "16:00",
+     "ort": "09060810",
+     "heim": "Dartperados",
+     "gast": "DC Ansbach IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "06.11.2026",
+     "zeit": "20:00",
+     "ort": "09060770",
+     "heim": "DC Ansbach IV",
+     "gast": "Anarchy 05 IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "07.11.2026",
+     "zeit": "15:00",
+     "ort": "09060850",
+     "heim": "TSV Schnelldorf III",
+     "gast": "FCA Arrows II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "08.11.2026",
+     "zeit": "16:00",
+     "ort": "09060810",
+     "heim": "Dartperados",
+     "gast": "Sittenbachdart II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "27.11.2026",
+     "zeit": "20:00",
+     "ort": "09060200",
+     "heim": "DC Tschambolaia VI",
+     "gast": "Dartperados",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "28.11.2026",
+     "zeit": "19:30",
+     "ort": "09060710",
+     "heim": "Sittenbachdart II",
+     "gast": "TSV Schnelldorf III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "29.11.2026",
+     "zeit": "16:00",
+     "ort": "09060870",
+     "heim": "FCA Arrows II",
+     "gast": "Darts- und Peperonispießfreunde Wilhelmsdorf II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "04.12.2026",
+     "zeit": "20:00",
+     "ort": "09060200",
+     "heim": "DC Tschambolaia VI",
+     "gast": "Sittenbachdart II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "05.12.2026",
+     "zeit": "15:00",
+     "ort": "09060850",
+     "heim": "TSV Schnelldorf III",
+     "gast": "DC Ansbach IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "06.12.2026",
+     "zeit": "16:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights V",
+     "gast": "FCA Arrows II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "11.12.2026",
+     "zeit": "20:00",
+     "ort": "09060100",
+     "heim": "Anarchy 05 IV",
+     "gast": "TSV Schnelldorf III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "12.12.2026",
+     "zeit": "19:00",
+     "ort": "09061020",
+     "heim": "Darts- und Peperonispießfreunde Wilhelmsdorf II",
+     "gast": "Dartperados",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "13.12.2026",
+     "zeit": "16:00",
+     "ort": "09060870",
+     "heim": "FCA Arrows II",
+     "gast": "Sittenbachdart II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "08.01.2027",
+     "zeit": "20:00",
+     "ort": "09060100",
+     "heim": "Anarchy 05 IV",
+     "gast": "Dartperados",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "09.01.2027",
+     "zeit": "19:00",
+     "ort": "09061020",
+     "heim": "Darts- und Peperonispießfreunde Wilhelmsdorf II",
+     "gast": "DC Tschambolaia VI",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "10.01.2027",
+     "zeit": "16:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights V",
+     "gast": "TSV Schnelldorf III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "29.01.2027",
+     "zeit": "20:00",
+     "ort": "09060770",
+     "heim": "DC Ansbach IV",
+     "gast": "DC Tschambolaia VI",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "30.01.2027",
+     "zeit": "15:00",
+     "ort": "09060850",
+     "heim": "TSV Schnelldorf III",
+     "gast": "Dartperados",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "31.01.2027",
+     "zeit": "16:00",
+     "ort": "09060870",
+     "heim": "FCA Arrows II",
+     "gast": "Anarchy 05 IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "12.02.2027",
+     "zeit": "20:00",
+     "ort": "09060770",
+     "heim": "DC Ansbach IV",
+     "gast": "Sittenbachdart II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "13.02.2027",
+     "zeit": "15:00",
+     "ort": "09060850",
+     "heim": "TSV Schnelldorf III",
+     "gast": "TSV Kornburg DartKnights V",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "14.02.2027",
+     "zeit": "16:00",
+     "ort": "09060810",
+     "heim": "Dartperados",
+     "gast": "Anarchy 05 IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "26.02.2027",
+     "zeit": "20:00",
+     "ort": "09060100",
+     "heim": "Anarchy 05 IV",
+     "gast": "TSV Kornburg DartKnights V",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "27.02.2027",
+     "zeit": "15:00",
+     "ort": "09060850",
+     "heim": "TSV Schnelldorf III",
+     "gast": "Sittenbachdart II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "28.02.2027",
+     "zeit": "16:00",
+     "ort": "09060810",
+     "heim": "Dartperados",
+     "gast": "DC Tschambolaia VI",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "05.03.2027",
+     "zeit": "20:00",
+     "ort": "09060200",
+     "heim": "DC Tschambolaia VI",
+     "gast": "Anarchy 05 IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "06.03.2027",
+     "zeit": "19:00",
+     "ort": "09061020",
+     "heim": "Darts- und Peperonispießfreunde Wilhelmsdorf II",
+     "gast": "DC Ansbach IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "07.03.2027",
+     "zeit": "16:00",
+     "ort": "09060810",
+     "heim": "Dartperados",
+     "gast": "FCA Arrows II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "19.03.2027",
+     "zeit": "20:00",
+     "ort": "09060100",
+     "heim": "Anarchy 05 IV",
+     "gast": "DC Ansbach IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "20.03.2027",
+     "zeit": "19:30",
+     "ort": "09060710",
+     "heim": "Sittenbachdart II",
+     "gast": "Dartperados",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "21.03.2027",
+     "zeit": "16:00",
+     "ort": "09060870",
+     "heim": "FCA Arrows II",
+     "gast": "TSV Schnelldorf III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "02.04.2027",
+     "zeit": "20:00",
+     "ort": "09060770",
+     "heim": "DC Ansbach IV",
+     "gast": "TSV Kornburg DartKnights V",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "03.04.2027",
+     "zeit": "15:00",
+     "ort": "09060850",
+     "heim": "TSV Schnelldorf III",
+     "gast": "Anarchy 05 IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "04.04.2027",
+     "zeit": "16:00",
+     "ort": "09060810",
+     "heim": "Dartperados",
+     "gast": "Darts- und Peperonispießfreunde Wilhelmsdorf II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "16.04.2027",
+     "zeit": "20:00",
+     "ort": "09060100",
+     "heim": "Anarchy 05 IV",
+     "gast": "Darts- und Peperonispießfreunde Wilhelmsdorf II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "17.04.2027",
+     "zeit": "19:30",
+     "ort": "09060710",
+     "heim": "Sittenbachdart II",
+     "gast": "DC Tschambolaia VI",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "18.04.2027",
+     "zeit": "16:00",
+     "ort": "09060870",
+     "heim": "FCA Arrows II",
+     "gast": "TSV Kornburg DartKnights V",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "30.04.2027",
+     "zeit": "20:00",
+     "ort": "09060100",
+     "heim": "Anarchy 05 IV",
+     "gast": "Sittenbachdart II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "01.05.2027",
+     "zeit": "19:00",
+     "ort": "09061020",
+     "heim": "Darts- und Peperonispießfreunde Wilhelmsdorf II",
+     "gast": "TSV Schnelldorf III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "15.05.2027",
+     "zeit": "15:00",
+     "ort": "09060850",
+     "heim": "TSV Schnelldorf III",
+     "gast": "DC Tschambolaia VI",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "16.05.2027",
+     "zeit": "16:00",
+     "ort": "09060870",
+     "heim": "FCA Arrows II",
+     "gast": "DC Ansbach IV",
+     "ergebnis": ""
+    }
+   ],
+   "teamtable": "1532930",
+   "teamid": "1224149",
+   "ical": "https://bdv-dart.liga.nu/cgi-bin/WebObjects/nuLigaDARTDE.woa/wa/getTeamMeetingsWebcal?teamid=1224149&token=rd8Vlxv/1w8=",
+   "webcal": "webcal://bdv-dart.liga.nu/cgi-bin/WebObjects/nuLigaDARTDE.woa/wa/getTeamMeetingsWebcal?teamid=1224149&token=rd8Vlxv/1w8=",
+   "halle": "Sportheim TSV Kornburg (09060440)",
+   "spieler": [
+    {
+     "rang": "5.4",
+     "name": "Görlich, Stefan",
+     "einsaetze": "1",
+     "bilanz": ""
+    },
+    {
+     "rang": "5.3",
+     "name": "Rosardo-Cruz, Benjamin",
+     "einsaetze": "0",
+     "bilanz": ""
+    },
+    {
+     "rang": "5.1",
+     "name": "Wille, Mike",
+     "einsaetze": "1",
+     "bilanz": ""
+    },
+    {
+     "rang": "5.7",
+     "name": "Kasper, Anita",
+     "einsaetze": "0",
+     "bilanz": ""
+    },
+    {
+     "rang": "5.2",
+     "name": "Wille, Manuela",
+     "einsaetze": "2",
+     "bilanz": "1:3"
+    },
+    {
+     "rang": "5.10",
+     "name": "Hees, Sebastian",
+     "einsaetze": "1",
+     "bilanz": "1:1"
+    },
+    {
+     "rang": "5.6",
+     "name": "Ruck, Daniel",
+     "einsaetze": "0",
+     "bilanz": ""
+    },
+    {
+     "rang": "5.5",
+     "name": "Linde, Mathias",
+     "einsaetze": "1",
+     "bilanz": "0:2"
+    },
+    {
+     "rang": "5.8",
+     "name": "Winkler, Sieglinde",
+     "einsaetze": "2",
+     "bilanz": "0:4"
+    },
+    {
+     "rang": "5.9",
+     "name": "Soor, Christian",
+     "einsaetze": "2",
+     "bilanz": "1:3"
+    }
+   ],
+   "termine": [
+    {
+     "tag": "Sat",
+     "datum": "19.09.2026",
+     "zeit": "19:00",
+     "ort": "09061020",
+     "heim": "Darts- und Peperonispießfreunde Wilhelmsdorf II",
+     "gast": "TSV Kornburg DartKnights V",
+     "ergebnis": "10:2"
+    },
+    {
+     "tag": "Sat",
+     "datum": "26.09.2026",
+     "zeit": "19:30",
+     "ort": "09060710",
+     "heim": "Sittenbachdart II",
+     "gast": "TSV Kornburg DartKnights V",
+     "ergebnis": "11:1"
+    },
+    {
+     "tag": "Sun",
+     "datum": "18.10.2026",
+     "zeit": "16:00",
+     "ort": "09060810",
+     "heim": "Dartperados",
+     "gast": "TSV Kornburg DartKnights V",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "08.11.2026",
+     "zeit": "16:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights V",
+     "gast": "DC Tschambolaia VI",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "29.11.2026",
+     "zeit": "16:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights V",
+     "gast": "Anarchy 05 IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "06.12.2026",
+     "zeit": "16:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights V",
+     "gast": "FCA Arrows II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "13.12.2026",
+     "zeit": "16:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights V",
+     "gast": "DC Ansbach IV",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "10.01.2027",
+     "zeit": "16:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights V",
+     "gast": "TSV Schnelldorf III",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "31.01.2027",
+     "zeit": "16:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights V",
+     "gast": "Darts- und Peperonispießfreunde Wilhelmsdorf II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sat",
+     "datum": "13.02.2027",
+     "zeit": "15:00",
+     "ort": "09060850",
+     "heim": "TSV Schnelldorf III",
+     "gast": "TSV Kornburg DartKnights V",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "26.02.2027",
+     "zeit": "20:00",
+     "ort": "09060100",
+     "heim": "Anarchy 05 IV",
+     "gast": "TSV Kornburg DartKnights V",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "07.03.2027",
+     "zeit": "16:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights V",
+     "gast": "Sittenbachdart II",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "19.03.2027",
+     "zeit": "20:00",
+     "ort": "09060200",
+     "heim": "DC Tschambolaia VI",
+     "gast": "TSV Kornburg DartKnights V",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Fri",
+     "datum": "02.04.2027",
+     "zeit": "20:00",
+     "ort": "09060770",
+     "heim": "DC Ansbach IV",
+     "gast": "TSV Kornburg DartKnights V",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "18.04.2027",
+     "zeit": "16:00",
+     "ort": "09060870",
+     "heim": "FCA Arrows II",
+     "gast": "TSV Kornburg DartKnights V",
+     "ergebnis": ""
+    },
+    {
+     "tag": "Sun",
+     "datum": "16.05.2027",
+     "zeit": "16:00",
+     "ort": "09060440",
+     "heim": "TSV Kornburg DartKnights V",
+     "gast": "Dartperados",
+     "ergebnis": ""
+    }
+   ],
+   "ics_datei": "team5.ics",
+   "rang": 9,
+   "punkte": "0:4"
+  }
+ ]
+}
