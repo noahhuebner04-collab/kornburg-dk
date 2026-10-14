@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dart Knights – Competition</title>
+<meta name="description" content="Dart Knights Competition Auswertung – statische Website-Shell">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Optional: Google-Font mit System-Fallback (kein Pflicht-CDN) -->
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=20">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="logo" aria-label="Dart Knights Logo">
+      <span class="logo-mark" aria-hidden="true">♞</span>
+      <span class="logo-text">DART <em>KNIGHTS</em></span>
+    </div>
+    <nav class="tabs" aria-label="Hauptbereich">
+      <button class="tab is-active" type="button">Competition</button>
+      <select id="seasonSel" class="season-sel" aria-label="Saison wählen" title="Saison wählen"></select>
+    </nav>
+    </div>
+</header>
+
+<nav id="subnav" class="subnav" aria-label="Report-Seiten">
+  <div class="subnav-inner">
+    <button type="button" data-page="startseite" class="is-active">Start</button>
+    <button type="button" data-page="setzliste">Setzliste</button>
+    <button type="button" data-page="trophaeen">Trophäen</button>
+    <button type="button" data-page="h2h">H2H</button>
+    <button type="button" data-page="vergleich">Vergleich</button>
+    <button type="button" data-page="spieler1">Spieler</button>
+    <button type="button" data-page="gruppen">Gruppen</button>
+    <button type="button" data-page="bingo">Bingo</button>
+  </div>
+</nav>
+
+
+
+
+<main id="view" class="view" aria-live="polite"></main>
+
+<div id="loader" class="loader" role="status">
+  <div class="spinner" aria-hidden="true"></div>
+  <p>Lade Daten …</p>
+</div>
+
+<div id="refreshOverlay" class="loader" role="status" hidden>
+  <div class="spinner" aria-hidden="true"></div>
+  <p id="refreshOverlayText"><b>Daten werden aktualisiert …</b></p>
+  <p id="refreshOverlaySub" class="refresh-sub">Excel wird eingelesen, Kennzahlen neu berechnet, Seite neu gebaut. Bitte warten.</p>
+</div>
+
+<script src="js/charts.js?v=6"></script>
+<script src="js/compute.js?v=9"></script>
+<script src="js/app.js?v=19"></script>
+</body>
+</html>
